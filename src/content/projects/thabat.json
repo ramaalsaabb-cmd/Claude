@@ -165,17 +165,15 @@
       "id": "contributions",
       "title": "My Contributions",
       "titleAr": "مساهماتي",
-      "body": "As part of Team THABAT, my work included:",
-      "bodyAr": "ضمن فريق ثبات، شمل عملي:",
+      "body": "As part of Team THABAT, I worked on the electronics and integration:",
+      "bodyAr": "ضمن فريق ثبات، عملت على الإلكترونيات والدمج:",
       "list": [
-        "Developing the mixed-reality simulator in Unity for Meta Quest",
-        "Integrating the ESP32 + BNO055 haptic glove to detect hand stability",
-        "Connecting the glove to a live dashboard tracking stability, warnings and performance score"
+        "Building the electronics for the haptic glove with an ESP32 and a BNO055 motion sensor",
+        "Integrating the glove with the mixed-reality simulator so hand-stability data reaches the system"
       ],
       "listAr": [
-        "تطوير محاكي الواقع المختلط باستخدام Unity لنظارة Meta Quest",
-        "دمج القفاز اللمسي (ESP32 + BNO055) لرصد ثبات اليد",
-        "ربط القفاز بلوحة متابعة مباشرة للثبات والتحذيرات ودرجة الأداء"
+        "بناء إلكترونيات القفاز اللمسي باستخدام ESP32 وحساس الحركة BNO055",
+        "دمج القفاز مع محاكي الواقع المختلط لتصل بيانات ثبات اليد إلى النظام"
       ]
     }
   ],
