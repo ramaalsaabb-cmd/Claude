@@ -10,15 +10,15 @@
     "hardware",
     "interactive"
   ],
-  "description": "A mixed-reality bomb-disposal training experience that pairs immersive simulation with a physical haptic glove.",
-  "descriptionAr": "تجربة تدريبية بالواقع المختلط لتفكيك القنابل، تجمع بين المحاكاة الغامرة وقفاز لمسي حقيقي.",
+  "description": "A mixed-reality bomb-disposal training simulator with an ESP32 + BNO055 haptic glove that measures hand stability — Third Place at Defensthon.",
+  "descriptionAr": "محاكي تدريبي بالواقع المختلط لتفكيك القنابل مع قفاز لمسي يعتمد على ESP32 وحساس BNO055 لقياس ثبات اليد — المركز الثالث في Defensthon.",
   "overview": [
-    "THABAT is a mixed-reality training experience for bomb disposal. It combines an immersive simulation running on Meta Quest with a physical haptic glove, so the training happens both in the headset and in the hand.",
-    "The project brings software and hardware together: a Unity experience on one side, and an ESP32-based hardware layer with motion sensors and haptic interaction on the other."
+    "THABAT is a mixed-reality simulator for bomb-disposal training, built with Unity for Meta Quest. Trainees work through the simulation while wearing a haptic glove that measures how steady their hand is.",
+    "The glove combines an ESP32 with a BNO055 motion sensor. Its data feeds a live dashboard that tracks hand stability, warnings and a performance score."
   ],
   "overviewAr": [
-    "ثبات تجربة تدريبية بالواقع المختلط لتفكيك القنابل. تجمع بين محاكاة غامرة تعمل على Meta Quest وقفاز لمسي حقيقي، ليحدث التدريب داخل النظارة وفي يد المتدرّب معاً.",
-    "يجمع المشروع بين البرمجيات والعتاد: تجربة مبنية بـ Unity من جهة، وطبقة عتاد تعتمد على ESP32 مع حساسات حركة وتفاعل لمسي من جهة أخرى."
+    "ثبات محاكي بالواقع المختلط للتدريب على تفكيك القنابل، بُني باستخدام Unity لنظارة Meta Quest. يتدرّب المستخدم داخل المحاكاة وهو يرتدي قفازاً لمسياً يقيس مدى ثبات يده.",
+    "يجمع القفاز بين لوحة ESP32 وحساس الحركة BNO055، وتُعرض بياناته على لوحة متابعة مباشرة تتتبّع ثبات اليد والتحذيرات ودرجة الأداء."
   ],
   "engine": [
     "Unity",
@@ -29,6 +29,7 @@
     "Meta Quest",
     "Mixed Reality",
     "ESP32",
+    "BNO055",
     "Motion Sensors",
     "Haptic Interaction",
     "Hardware/Software Integration"
@@ -39,8 +40,8 @@
       "id": "overview",
       "title": "Overview",
       "titleAr": "نظرة عامة",
-      "body": "A mixed-reality approach to bomb-disposal training: the trainee works inside an immersive simulation while wearing a physical haptic glove, connecting what they see in the headset with what they feel in their hand.",
-      "bodyAr": "مقاربة بالواقع المختلط للتدريب على تفكيك القنابل: يعمل المتدرّب داخل محاكاة غامرة وهو يرتدي قفازاً لمسياً حقيقياً، فيرتبط ما يراه في النظارة بما يشعر به في يده."
+      "body": "A mixed-reality approach to bomb-disposal training: the trainee works inside an immersive simulation while a haptic glove measures the stability of their hand — the skill that matters most in the task.",
+      "bodyAr": "مقاربة بالواقع المختلط للتدريب على تفكيك القنابل: يعمل المتدرّب داخل محاكاة غامرة بينما يقيس قفاز لمسي ثبات يده — وهي المهارة الأهم في هذه المهمة."
     },
     {
       "id": "experience",
@@ -55,9 +56,21 @@
       "id": "hardware",
       "title": "Hardware and Haptic Glove",
       "titleAr": "العتاد والقفاز اللمسي",
-      "body": "The physical side of THABAT is a haptic glove. Its hardware work involves an ESP32, motion sensors and haptic interaction, integrated with the Unity experience.",
-      "bodyAr": "الجانب المادي من ثبات هو قفاز لمسي. يشمل العمل على العتاد لوحة ESP32 وحساسات حركة وتفاعلاً لمسياً، مدمجة مع تجربة Unity.",
-      "images": []
+      "body": "The haptic glove pairs an ESP32 with a BNO055 orientation sensor to detect hand stability. Readings are streamed to a live dashboard that shows stability, warnings and a performance score.",
+      "bodyAr": "يجمع القفاز اللمسي بين لوحة ESP32 وحساس الاتجاه BNO055 لرصد ثبات اليد. تُرسل القراءات إلى لوحة متابعة مباشرة تعرض الثبات والتحذيرات ودرجة الأداء.",
+      "images": [],
+      "list": [
+        "ESP32 microcontroller",
+        "BNO055 motion / orientation sensor",
+        "Hand-stability detection",
+        "Live dashboard: stability, warnings, performance score"
+      ],
+      "listAr": [
+        "متحكم ESP32",
+        "حساس الحركة والاتجاه BNO055",
+        "رصد ثبات اليد",
+        "لوحة متابعة مباشرة: الثبات، التحذيرات، درجة الأداء"
+      ]
     },
     {
       "id": "process",
@@ -75,17 +88,17 @@
         "Unity",
         "Meta Quest",
         "ESP32",
-        "Motion sensors",
+        "BNO055 sensor",
         "Haptic interaction",
-        "Hardware/software integration"
+        "Live performance dashboard"
       ],
       "listAr": [
         "Unity",
         "Meta Quest",
         "ESP32",
-        "حساسات الحركة",
+        "حساس BNO055",
         "التفاعل اللمسي",
-        "دمج العتاد والبرمجيات"
+        "لوحة أداء مباشرة"
       ]
     },
     {
@@ -108,16 +121,31 @@
       "id": "achievement",
       "title": "Achievement",
       "titleAr": "الإنجاز",
-      "body": "THABAT won Third Place in the Robotics Track at Defensthon.",
-      "bodyAr": "حصل مشروع ثبات على المركز الثالث في مسار الروبوتات في هاكاثون Defensthon."
+      "body": [
+        "THABAT won Third Place in the Robotics Track at Defensthon (May 2026), awarded to Team THABAT.",
+        "Defensthon was organised and supported by Tuwaiq Academy, GADD, the Ministry of Education and NCMS."
+      ],
+      "bodyAr": [
+        "حصل فريق ثبات على المركز الثالث في مسار الروبوتات في هاكاثون Defensthon (مايو ٢٠٢٦).",
+        "نُظّم الهاكاثون بدعم من أكاديمية طويق و GADD ووزارة التعليم و NCMS."
+      ]
     },
     {
       "id": "contributions",
       "title": "My Contributions",
       "titleAr": "مساهماتي",
-      "body": "",
-      "bodyAr": "",
-      "list": []
+      "body": "As part of Team THABAT, my work included:",
+      "bodyAr": "ضمن فريق ثبات، شمل عملي:",
+      "list": [
+        "Developing the mixed-reality simulator in Unity for Meta Quest",
+        "Integrating the ESP32 + BNO055 haptic glove to detect hand stability",
+        "Connecting the glove to a live dashboard tracking stability, warnings and performance score"
+      ],
+      "listAr": [
+        "تطوير محاكي الواقع المختلط باستخدام Unity لنظارة Meta Quest",
+        "دمج القفاز اللمسي (ESP32 + BNO055) لرصد ثبات اليد",
+        "ربط القفاز بلوحة متابعة مباشرة للثبات والتحذيرات ودرجة الأداء"
+      ]
     }
   ],
   "gallery": [],
@@ -127,7 +155,8 @@
       "title": "Third Place — Robotics Track",
       "titleAr": "المركز الثالث — مسار الروبوتات",
       "event": "Defensthon",
-      "eventAr": "Defensthon"
+      "eventAr": "Defensthon",
+      "date": "05/2026"
     }
   ],
   "featured": true,
@@ -142,8 +171,7 @@
   },
   "editorNotes": [
     "Demo video: run `npm run media` after placing VIDEO-2026-09-10-23-17-40.mov in media-source/incoming/. Watch it, then add a factual caption.",
-    "Add verified team responsibilities to 'My Contributions' (the project was not built by Rama alone unless confirmed).",
-    "Add photos of the glove / hardware to the 'hardware' section, and headset captures to 'experience'.",
-    "Add the year once confirmed."
-  ]
+    "Add photos of the glove / hardware to the 'hardware' section, and headset captures to 'experience'."
+  ],
+  "year": "2026"
 }

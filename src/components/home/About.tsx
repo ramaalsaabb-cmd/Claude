@@ -83,6 +83,18 @@ export default function About({ locale, dict, cvAvailable, photoAvailable }: Pro
                   {a.graduation}: {pick(locale, site.graduation, site.graduationAr)}
                 </dd>
               </div>
+              <div className="bg-cream p-6">
+                <dt className="mb-2 text-xs font-semibold uppercase tracking-label text-wine">{a.gradProject}</dt>
+                <dd className="text-sm leading-relaxed text-charcoal">{pick(locale, site.graduationProject, site.graduationProjectAr)}</dd>
+              </div>
+              <div className="bg-cream p-6">
+                <dt className="mb-2 text-xs font-semibold uppercase tracking-label text-wine">{a.languages}</dt>
+                {pick(locale, site.languages, site.languagesAr).map((l) => (
+                  <dd key={l} className="text-sm text-charcoal">
+                    {l}
+                  </dd>
+                ))}
+              </div>
               <div className="bg-cream p-6 sm:col-span-2">
                 <dt className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-label text-wine">
                   <Sparkles className="h-4 w-4" aria-hidden="true" />

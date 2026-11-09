@@ -1,9 +1,11 @@
 /**
- * Education, experience & achievements timeline.
+ * Education, experience & achievements timeline (source: CV).
  *
+ * Entries are grouped automatically by `type` into:
+ *   Education · Awards · Certificates & Training · Leadership & Activities · Experience
+ * Within a group they appear in the order listed (newest first).
  * Add future COOP placements, internships, roles, hackathons, bootcamps,
- * certifications, competitions and awards here. Entries appear in the order
- * listed. Only add real, verified information — leave `period` out if unsure.
+ * certifications, competitions and awards here — real, verified info only.
  */
 export type TimelineType =
   | "education"
@@ -14,7 +16,8 @@ export type TimelineType =
   | "role"
   | "hackathon"
   | "bootcamp"
-  | "certification";
+  | "certification"
+  | "leadership";
 
 export type TimelineEntry = {
   id: string;
@@ -33,25 +36,140 @@ export type TimelineEntry = {
 };
 
 export const timeline: TimelineEntry[] = [
+  // ---------------- Education ----------------
   {
     id: "pnu-it",
     type: "education",
-    title: "Bachelor's in Information Technology",
+    title: "Bachelor of Information Technology",
     titleAr: "بكالوريوس تقنية المعلومات",
-    organization: "Princess Nourah bint Abdulrahman University",
-    organizationAr: "جامعة الأميرة نورة بنت عبدالرحمن",
-    period: "Expected graduation: June 2027",
-    periodAr: "التخرج المتوقع: يونيو ٢٠٢٧",
+    organization: "Princess Nourah bint Abdulrahman University · Riyadh",
+    organizationAr: "جامعة الأميرة نورة بنت عبدالرحمن · الرياض",
+    period: "08/2023 – Present · Expected graduation June 2027",
+    periodAr: "٠٨/٢٠٢٣ – حتى الآن · التخرج المتوقع يونيو ٢٠٢٧",
+    description:
+      "Graduation project: PersonaShield AI — an AI-powered cybersecurity platform focused on personalized security awareness and digital threat detection.",
+    descriptionAr:
+      "مشروع التخرج: PersonaShield AI — منصة أمن سيبراني مدعومة بالذكاء الاصطناعي تركّز على التوعية الأمنية المخصّصة ورصد التهديدات الرقمية.",
   },
+
+  // ---------------- Awards ----------------
   {
     id: "defensthon-robotics",
     type: "award",
-    title: "Third Place — Robotics Track",
+    title: "3rd Place — Robotics Track",
     titleAr: "المركز الثالث — مسار الروبوتات",
-    organization: "Defensthon",
-    organizationAr: "Defensthon",
-    description: "Awarded for THABAT, a mixed-reality bomb-disposal training experience with a physical haptic glove.",
-    descriptionAr: "عن مشروع ثبات، تجربة تدريبية بالواقع المختلط لتفكيك القنابل مع قفاز لمسي حقيقي.",
+    organization: "Defensthon · Team THABAT",
+    organizationAr: "Defensthon · فريق ثبات",
+    period: "05/2026",
+    periodAr: "٠٥/٢٠٢٦",
+    description: "Awarded for THABAT, a mixed-reality bomb-disposal training simulator with an ESP32 + BNO055 haptic glove.",
+    descriptionAr: "عن مشروع ثبات، محاكي تدريبي بالواقع المختلط لتفكيك القنابل مع قفاز لمسي (ESP32 + BNO055).",
     project: "thabat",
+  },
+  {
+    id: "pnu-appreciation",
+    type: "award",
+    title: "Certificate of Appreciation — Extracurricular Activities",
+    titleAr: "شهادة شكر وتقدير — الأنشطة اللاصفية",
+    organization: "Faculty of Computer & Information Sciences, PNU",
+    organizationAr: "كلية علوم الحاسب والمعلومات، جامعة الأميرة نورة",
+    period: "06/2026",
+    periodAr: "٠٦/٢٠٢٦",
+  },
+
+  // ---------------- Certificates & Training ----------------
+  {
+    id: "tuwaiq-vr-bootcamp",
+    type: "bootcamp",
+    title: "VR Development & Emerging Technologies Bootcamp",
+    titleAr: "معسكر تطوير الواقع الافتراضي والتقنيات الناشئة",
+    organization: "Tuwaiq Academy · 160 training hours",
+    organizationAr: "أكاديمية طويق · ١٦٠ ساعة تدريبية",
+    period: "2026",
+    periodAr: "٢٠٢٦",
+  },
+  {
+    id: "tuwaiq-mechatronics-bootcamp",
+    type: "bootcamp",
+    title: "Mechatronics Engineering Fundamentals Bootcamp",
+    titleAr: "معسكر أساسيات هندسة الميكاترونكس",
+    organization: "Tuwaiq Academy · 100 training hours",
+    organizationAr: "أكاديمية طويق · ١٠٠ ساعة تدريبية",
+    period: "2026",
+    periodAr: "٢٠٢٦",
+  },
+  {
+    id: "ccna-itn",
+    type: "certification",
+    title: "CCNA: Introduction to Networks",
+    organization: "Cisco",
+    period: "2025",
+    periodAr: "٢٠٢٥",
+  },
+  {
+    id: "oracle-java",
+    type: "certification",
+    title: "Oracle Java Foundations",
+    organization: "Oracle",
+    period: "2024",
+    periodAr: "٢٠٢٤",
+  },
+  {
+    id: "cisco-junior-cyber",
+    type: "certification",
+    title: "Junior Cybersecurity Analyst Career Path",
+    organization: "Cisco Networking Academy",
+    period: "2024",
+    periodAr: "٢٠٢٤",
+  },
+
+  // ---------------- Leadership & Activities ----------------
+  {
+    id: "tuwaiq-club",
+    type: "leadership",
+    title: "Game Development Track Member",
+    titleAr: "عضوة مسار تطوير الألعاب",
+    organization: "Tuwaiq Club, PNU",
+    organizationAr: "نادي طويق، جامعة الأميرة نورة",
+    period: "05/2026 – Present",
+    periodAr: "٠٥/٢٠٢٦ – حتى الآن",
+  },
+  {
+    id: "ajyalna",
+    type: "leadership",
+    title: "IoT Committee Member",
+    titleAr: "عضوة لجنة إنترنت الأشياء",
+    organization: "Ajyalna Alwaidah Initiative, PNU",
+    organizationAr: "مبادرة أجيالنا الواعدة، جامعة الأميرة نورة",
+    period: "07/2025 – 10/2026",
+    periodAr: "٠٧/٢٠٢٥ – ١٠/٢٠٢٦",
+  },
+  {
+    id: "elixir-hub",
+    type: "leadership",
+    title: "Project Management Member",
+    titleAr: "عضوة إدارة المشاريع",
+    organization: "Elixir Hub",
+    period: "09/2025 – 01/2026",
+    periodAr: "٠٩/٢٠٢٥ – ٠١/٢٠٢٦",
+  },
+  {
+    id: "cysc",
+    type: "leadership",
+    title: "Technical Training Member",
+    titleAr: "عضوة التدريب التقني",
+    organization: "Cyber Security Club (CYSC)",
+    organizationAr: "نادي الأمن السيبراني (CYSC)",
+    period: "08/2025 – 01/2026",
+    periodAr: "٠٨/٢٠٢٥ – ٠١/٢٠٢٦",
+  },
+  {
+    id: "robotechx",
+    type: "leadership",
+    title: "Head of Marketing Committee",
+    titleAr: "رئيسة لجنة التسويق",
+    organization: "RoboTechX",
+    period: "09/2025 – 12/2025",
+    periodAr: "٠٩/٢٠٢٥ – ١٢/٢٠٢٥",
   },
 ];

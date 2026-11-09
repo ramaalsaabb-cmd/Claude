@@ -5,36 +5,104 @@
   "titleAr": "مختبر الميكاترونكس الافتراضي",
   "category": "Virtual Reality / Education / Mechatronics",
   "categoryAr": "الواقع الافتراضي / التعليم / الميكاترونكس",
-  "categories": ["vr-mr", "hardware", "interactive"],
-  "description": "An immersive VR laboratory with interactive virtual experiments and connected hardware.",
-  "descriptionAr": "مختبر غامر بالواقع الافتراضي يضم تجارب افتراضية تفاعلية وعتاداً متصلاً.",
-  "overview": "An immersive VR laboratory experience for mechatronics, combining interactive virtual experiments with connected hardware.",
-  "overviewAr": "تجربة مختبر غامرة بالواقع الافتراضي في مجال الميكاترونكس، تجمع بين التجارب الافتراضية التفاعلية والعتاد المتصل.",
-  "engine": ["Unity"],
-  "technologies": ["Unity", "Virtual Reality", "VR Interaction", "Arduino", "ESP32", "Electronics", "Hardware Integration"],
+  "categories": [
+    "vr-mr",
+    "hardware",
+    "interactive"
+  ],
+  "description": "An interactive VR lab that teaches Arduino and hardware basics — identifying components, wiring an LED and simulated Arduino programming.",
+  "descriptionAr": "مختبر تفاعلي بالواقع الافتراضي يعلّم أساسيات Arduino والعتاد — التعرّف على المكوّنات، وتوصيل مصباح LED، وبرمجة Arduino بشكل محاكى.",
+  "overview": "An interactive VR laboratory, built at Tuwaiq Academy, that teaches Arduino and hardware basics through hands-on virtual tasks: identifying components, wiring an LED and simulated Arduino programming.",
+  "overviewAr": "مختبر تفاعلي بالواقع الافتراضي، بُني في أكاديمية طويق، يعلّم أساسيات Arduino والعتاد من خلال مهام افتراضية عملية: التعرّف على المكوّنات، وتوصيل مصباح LED، وبرمجة Arduino بشكل محاكى.",
+  "engine": [
+    "Unity"
+  ],
+  "technologies": [
+    "Unity",
+    "Virtual Reality",
+    "VR Interaction",
+    "Arduino",
+    "ESP32",
+    "Electronics",
+    "Hardware Integration"
+  ],
   "sections": [
     {
       "id": "overview",
       "title": "Project Overview",
       "titleAr": "نظرة عامة",
-      "body": "An immersive VR laboratory experience involving interactive virtual experiments and connected hardware.",
-      "bodyAr": "تجربة مختبر غامرة بالواقع الافتراضي تتضمن تجارب افتراضية تفاعلية وعتاداً متصلاً."
+      "body": "A VR lab simulation for learning Arduino and hardware fundamentals, developed at Tuwaiq Academy.",
+      "bodyAr": "محاكاة مختبر بالواقع الافتراضي لتعلّم أساسيات Arduino والعتاد، طُوّرت في أكاديمية طويق."
     },
-    { "id": "vr-lab", "title": "VR Laboratory", "titleAr": "المختبر الافتراضي", "body": "", "bodyAr": "", "images": [] },
-    { "id": "experiments", "title": "Experiment Interactions", "titleAr": "التفاعل مع التجارب", "body": "", "bodyAr": "", "images": [] },
+    {
+      "id": "vr-lab",
+      "title": "VR Laboratory",
+      "titleAr": "المختبر الافتراضي",
+      "body": "",
+      "bodyAr": "",
+      "images": []
+    },
+    {
+      "id": "experiments",
+      "title": "Experiment Interactions",
+      "titleAr": "التفاعل مع التجارب",
+      "body": "Learners practise three kinds of tasks inside the lab:",
+      "bodyAr": "يتدرّب المتعلّم على ثلاثة أنواع من المهام داخل المختبر:",
+      "images": [],
+      "list": [
+        "Component identification",
+        "LED wiring",
+        "Simulated Arduino programming"
+      ],
+      "listAr": [
+        "التعرّف على المكوّنات",
+        "توصيل مصباح LED",
+        "برمجة Arduino بشكل محاكى"
+      ]
+    },
     {
       "id": "hardware",
       "title": "Hardware Setup",
       "titleAr": "إعداد العتاد",
-      "body": "The virtual lab connects to physical hardware, with development work across Arduino, ESP32 and electronics.",
-      "bodyAr": "يتصل المختبر الافتراضي بعتاد حقيقي، وشمل التطوير العمل على Arduino و ESP32 والإلكترونيات.",
+      "body": "The lab is built around Arduino and core electronics — the components and wiring learners would meet on a real workbench — with development work across Arduino, ESP32 and electronics.",
+      "bodyAr": "بُني المختبر حول Arduino وأساسيات الإلكترونيات — المكوّنات والتوصيلات التي سيواجهها المتعلّم على طاولة عمل حقيقية — وشمل التطوير العمل على Arduino و ESP32 والإلكترونيات.",
       "images": []
     },
-    { "id": "role", "title": "My Role", "titleAr": "دوري", "body": "", "bodyAr": "" },
-    { "id": "process", "title": "Development Process", "titleAr": "مراحل التطوير", "body": "", "bodyAr": "" },
-    { "id": "challenges", "title": "Challenges", "titleAr": "التحديات", "body": "", "bodyAr": "" },
-    { "id": "photos", "title": "Photos", "titleAr": "صور", "images": [], "layout": "wide" },
-    { "id": "videos", "title": "Videos", "titleAr": "مقاطع الفيديو", "videos": [], "layout": "wide" }
+    {
+      "id": "role",
+      "title": "My Role",
+      "titleAr": "دوري",
+      "body": "I developed the interactive VR lab simulation.",
+      "bodyAr": "طوّرت محاكاة المختبر التفاعلي بالواقع الافتراضي."
+    },
+    {
+      "id": "process",
+      "title": "Development Process",
+      "titleAr": "مراحل التطوير",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "challenges",
+      "title": "Challenges",
+      "titleAr": "التحديات",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "photos",
+      "title": "Photos",
+      "titleAr": "صور",
+      "images": [],
+      "layout": "wide"
+    },
+    {
+      "id": "videos",
+      "title": "Videos",
+      "titleAr": "مقاطع الفيديو",
+      "videos": [],
+      "layout": "wide"
+    }
   ],
   "gallery": [],
   "videos": [],
@@ -43,9 +111,15 @@
   "published": true,
   "displayOrder": 6,
   "inProgress": true,
-  "theme": { "accent": "#882A2A", "coverBackground": "#2A2626", "coverInk": "#E8DDD2", "motif": "grid" },
+  "theme": {
+    "accent": "#882A2A",
+    "coverBackground": "#2A2626",
+    "coverInk": "#E8DDD2",
+    "motif": "grid"
+  },
   "editorNotes": [
-    "No media was supplied yet. Do not describe specific experiments until confirmed.",
-    "Fill in VR Laboratory, Experiment Interactions, My Role, Process and Challenges with verified details."
-  ]
+    "Experiments (component identification, LED wiring, simulated Arduino programming) come from the CV.",
+    "No media supplied yet."
+  ],
+  "year": "2026"
 }

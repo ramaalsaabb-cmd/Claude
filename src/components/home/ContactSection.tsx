@@ -33,6 +33,12 @@ export default function ContactSection({ locale, dict, number, cvAvailable }: Pr
             {c.heading}
           </h2>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-cream/75">{c.text}</p>
+          {site.availability && (
+            <p className="mt-4 inline-flex items-center gap-2 text-sm text-cream/80">
+              <span className="h-2 w-2 rounded-full bg-wine" aria-hidden="true" />
+              {locale === "ar" ? site.availabilityAr : site.availability}
+            </p>
+          )}
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <ContactLinks dict={dict} />

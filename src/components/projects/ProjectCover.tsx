@@ -4,7 +4,7 @@ export type CoverTheme = {
   accent?: string;
   coverBackground?: string;
   coverInk?: string;
-  motif?: "dunes" | "rings" | "poster" | "stripes" | "grid" | "wireframe" | "default";
+  motif?: "dunes" | "rings" | "poster" | "stripes" | "grid" | "wireframe" | "signal" | "default";
 };
 
 type Props = {
@@ -157,6 +157,18 @@ function Motif({ motif, ink, accent }: { motif: NonNullable<CoverTheme["motif"]>
           <path d="M240 120 L 240 160" strokeOpacity="0.3" />
           <path d="M120 210 L 160 190 L 200 210 L 200 250 L 160 270 L 120 250 Z" strokeOpacity="0.35" />
           <path d="M112 212 L 160 170 L 208 212" stroke={accent} strokeOpacity="0.8" />
+        </g>
+      );
+    case "signal":
+      return (
+        <g fill="none" strokeLinecap="round">
+          {[30, 58, 86, 114].map((r, i) => (
+            <path key={r} d={`M${290 - r} ${150 - r * 0.2} A ${r} ${r} 0 0 1 ${290 + r} ${150 - r * 0.2}`} stroke={i === 1 ? accent : ink} strokeOpacity={i === 1 ? 1 : 0.35 - i * 0.05} strokeWidth="1.4" />
+          ))}
+          <rect x="272" y="150" width="36" height="64" rx="8" stroke={ink} strokeOpacity="0.7" strokeWidth="1.4" />
+          <path d="M284 204 h12" stroke={ink} strokeOpacity="0.7" strokeWidth="1.4" />
+          <path d="M60 80 h70 M60 92 h46 M60 104 h58" stroke={ink} strokeOpacity="0.25" />
+          <path d="M60 130 l12 12 l22 -24" stroke={accent} strokeWidth="2" />
         </g>
       );
     default:

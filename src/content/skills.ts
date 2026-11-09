@@ -4,10 +4,10 @@
  * `matches` links a skill to project `technologies` (case-insensitive),
  * so the Skills section can show where each skill appears in your work.
  */
-export type SkillGroupId = "languages" | "immersive" | "modeling" | "hardware" | "tools";
+export type SkillGroupId = "languages" | "immersive" | "modeling" | "hardware" | "cyber" | "tools";
 
 export type Skill = { name: string; nameAr?: string; matches?: string[] };
-export type SkillGroup = { id: SkillGroupId; icon: "code" | "glasses" | "box" | "cpu" | "wrench"; skills: Skill[] };
+export type SkillGroup = { id: SkillGroupId; icon: "code" | "glasses" | "box" | "cpu" | "shield" | "wrench"; skills: Skill[] };
 
 export const skillGroups: SkillGroup[] = [
   {
@@ -19,6 +19,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Java" },
       { name: "JavaScript" },
       { name: "SQL" },
+      { name: "Object-Oriented Programming", nameAr: "البرمجة كائنية التوجه" },
     ],
   },
   {
@@ -30,6 +31,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Virtual Reality", nameAr: "الواقع الافتراضي", matches: ["Virtual Reality"] },
       { name: "Augmented Reality", nameAr: "الواقع المعزز" },
       { name: "Mixed Reality", nameAr: "الواقع المختلط", matches: ["Mixed Reality"] },
+      { name: "Meta Quest", matches: ["Meta Quest", "Meta Quest 3"] },
       { name: "XR Interaction Toolkit" },
     ],
   },
@@ -48,6 +50,8 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: "ESP32", matches: ["ESP32"] },
       { name: "Arduino", matches: ["Arduino"] },
+      { name: "BNO055", matches: ["BNO055"] },
+      { name: "Microcontrollers", nameAr: "المتحكمات الدقيقة", matches: ["ESP32", "Arduino"] },
       { name: "Sensors", nameAr: "الحساسات", matches: ["Motion Sensors"] },
       { name: "Electronics Prototyping", nameAr: "النماذج الأولية للإلكترونيات", matches: ["Electronics"] },
       {
@@ -55,6 +59,16 @@ export const skillGroups: SkillGroup[] = [
         nameAr: "دمج العتاد والبرمجيات",
         matches: ["Hardware/Software Integration", "Hardware Integration"],
       },
+    ],
+  },
+  {
+    id: "cyber",
+    icon: "shield",
+    skills: [
+      { name: "Cybersecurity Fundamentals", nameAr: "أساسيات الأمن السيبراني" },
+      { name: "Computer Networking", nameAr: "شبكات الحاسب" },
+      { name: "CCNA" },
+      { name: "Security Awareness", nameAr: "التوعية الأمنية", matches: ["Security Awareness"] },
     ],
   },
   {

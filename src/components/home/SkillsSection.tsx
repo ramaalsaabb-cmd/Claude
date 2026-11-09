@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Code2, Glasses, Box, Cpu, Wrench, ArrowUpRight } from "lucide-react";
+import { Code2, Glasses, Box, Cpu, Wrench, ShieldCheck, ArrowUpRight } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 import { pick } from "@/lib/i18n";
 import type { Dictionary } from "@/content/dictionaries";
 import type { SkillGroup } from "@/content/skills";
 
-const ICONS = { code: Code2, glasses: Glasses, box: Box, cpu: Cpu, wrench: Wrench };
+const ICONS = { code: Code2, glasses: Glasses, box: Box, cpu: Cpu, shield: ShieldCheck, wrench: Wrench };
 
 export type SkillProjectRef = { slug: string; title: string; titleAr?: string; technologies: string[] };
 
@@ -39,7 +39,7 @@ export default function SkillsSection({ locale, dict, groups, projects }: Props)
     <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
       {groups.map((g, gi) => {
         const Icon = ICONS[g.icon];
-        const span = gi < 2 ? "lg:col-span-3" : "lg:col-span-2";
+        const span = "lg:col-span-2";
         const active = g.skills.find((s) => s.name === selected);
         const used = active ? usage.get(active.name) ?? [] : [];
         return (

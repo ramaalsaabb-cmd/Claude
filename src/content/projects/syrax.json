@@ -1,0 +1,99 @@
+{
+  "id": "syrax",
+  "slug": "syrax",
+  "title": "SYRAX",
+  "titleAr": "SYRAX",
+  "category": "Virtual Reality / Web / Security Awareness",
+  "categoryAr": "الواقع الافتراضي / الويب / التوعية الأمنية",
+  "categories": [
+    "vr-mr",
+    "interactive"
+  ],
+  "year": "2026",
+  "description": "A VR and web training platform that simulates financial scams — phishing, impersonation and pressured calls — and scores every decision.",
+  "descriptionAr": "منصة تدريبية بالواقع الافتراضي والويب تحاكي الاحتيال المالي — التصيّد، وانتحال الشخصية، والمكالمات الضاغطة — وتقيّم كل قرار.",
+  "overview": "SYRAX is a financial scam-awareness trainer built for the Amad Hackathon. Using Unity and Meta Quest alongside a web platform, it places people inside realistic scam scenarios — phishing, impersonation and pressured calls — and scores each choice as safe or unsafe, with a results dashboard at the end.",
+  "overviewAr": "SYRAX منصة تدريبية للتوعية بالاحتيال المالي بُنيت لهاكاثون أمد. باستخدام Unity و Meta Quest إلى جانب منصة ويب، تضع المستخدم داخل سيناريوهات احتيال واقعية — التصيّد، وانتحال الشخصية، والمكالمات الضاغطة — وتقيّم كل قرار كآمن أو غير آمن، مع لوحة نتائج في النهاية.",
+  "engine": [
+    "Unity",
+    "Meta Quest"
+  ],
+  "technologies": [
+    "Unity",
+    "Meta Quest",
+    "Virtual Reality",
+    "Web Platform",
+    "Security Awareness"
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "titleAr": "نظرة عامة",
+      "body": "A VR and web training platform for recognising financial scams, developed for the Amad Hackathon.",
+      "bodyAr": "منصة تدريبية بالواقع الافتراضي والويب للتعرّف على الاحتيال المالي، طُوّرت لهاكاثون أمد."
+    },
+    {
+      "id": "scenarios",
+      "title": "Scam Scenarios",
+      "titleAr": "سيناريوهات الاحتيال",
+      "body": "The training simulates three common scam patterns:",
+      "bodyAr": "يحاكي التدريب ثلاثة أنماط احتيال شائعة:",
+      "list": [
+        "Phishing",
+        "Impersonation",
+        "Pressured calls"
+      ],
+      "listAr": [
+        "التصيّد الاحتيالي",
+        "انتحال الشخصية",
+        "المكالمات الضاغطة"
+      ]
+    },
+    {
+      "id": "scoring",
+      "title": "Decision Scoring",
+      "titleAr": "تقييم القرارات",
+      "body": "Every choice is scored as safe or unsafe, and a results dashboard summarises how the trainee performed.",
+      "bodyAr": "يُقيَّم كل قرار كآمن أو غير آمن، وتلخّص لوحة النتائج أداء المتدرّب."
+    },
+    {
+      "id": "role",
+      "title": "My Role",
+      "titleAr": "دوري",
+      "body": "I developed the VR and web training platform using Unity and Meta Quest, and implemented the safe/unsafe decision scoring with its results dashboard.",
+      "bodyAr": "طوّرت منصة التدريب بالواقع الافتراضي والويب باستخدام Unity و Meta Quest، ونفّذت نظام تقييم القرارات الآمنة وغير الآمنة مع لوحة النتائج."
+    },
+    {
+      "id": "photos",
+      "title": "Photos",
+      "titleAr": "صور",
+      "images": [],
+      "layout": "wide"
+    },
+    {
+      "id": "videos",
+      "title": "Videos",
+      "titleAr": "مقاطع الفيديو",
+      "videos": [],
+      "layout": "wide"
+    }
+  ],
+  "gallery": [],
+  "videos": [],
+  "achievements": [],
+  "featured": false,
+  "published": true,
+  "displayOrder": 7,
+  "inProgress": true,
+  "theme": {
+    "accent": "#882A2A",
+    "coverBackground": "#1E1B1B",
+    "coverInk": "#E8DDD2",
+    "motif": "signal"
+  },
+  "editorNotes": [
+    "Added from the CV (Amad Hackathon, 07/2026). No media supplied yet.",
+    "Confirm whether the role text should say 'we' (team) — the CV lists it as your work."
+  ]
+}

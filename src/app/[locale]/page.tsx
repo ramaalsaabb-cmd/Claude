@@ -27,7 +27,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   // Featured first, then by displayOrder
   const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featured) || a.displayOrder - b.displayOrder);
   const cards = ordered.map(toCardData);
-  const awardCount = projects.reduce((n, p) => n + p.achievements.length, 0);
+  const awardCount = timeline.filter((e) => e.type === "award").length;
   const cvAvailable = publicFileExists(site.cvPath);
   const photoAvailable = publicFileExists(site.photo);
   const Arrow = locale === "ar" ? ArrowLeft : ArrowRight;

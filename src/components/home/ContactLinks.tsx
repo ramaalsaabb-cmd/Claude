@@ -1,14 +1,15 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import type { Dictionary } from "@/content/dictionaries";
 import { site } from "@/content/site";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/Button";
 
 /** Renders only the links that are actually configured in src/content/site.ts. */
 export function configuredLinks(dict: Dictionary) {
-  const { email, linkedin, github } = site.links;
+  const { email, linkedin, github, phone } = site.links;
   return [
     email && { key: "email", href: `mailto:${email}`, label: dict.contact.email, text: email, Icon: Mail, external: false },
     linkedin && { key: "linkedin", href: linkedin, label: dict.contact.linkedin, text: "LinkedIn", Icon: LinkedInIcon, external: true },
+    phone && { key: "phone", href: `tel:${phone.replace(/\s+/g, "")}`, label: dict.contact.phone, text: phone, Icon: Phone, external: false },
     github && { key: "github", href: github, label: dict.contact.github, text: "GitHub", Icon: GitHubIcon, external: true },
   ].filter(Boolean) as {
     key: string;

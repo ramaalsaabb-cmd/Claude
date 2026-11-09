@@ -5,50 +5,133 @@
   "titleAr": "الكاميرا الكلاسيكية",
   "category": "Embedded Systems / Hardware Prototyping / Creative Technology",
   "categoryAr": "الأنظمة المدمجة / النماذج الأولية للعتاد / التقنية الإبداعية",
-  "categories": ["hardware", "interactive"],
-  "description": "A custom, retro-inspired digital camera prototype — from concept and wiring to soldering, enclosure and a working physical object.",
-  "descriptionAr": "نموذج أولي لكاميرا رقمية مستوحاة من الطراز الكلاسيكي — من الفكرة والتوصيلات إلى اللحام والهيكل وصولاً إلى جهاز حقيقي.",
-  "overview": "The Retro Camera is a custom digital camera prototype inspired by retro design. It brings together electronics, physical design and embedded development, built around an ESP32 with a small TFT display, microSD storage and a rechargeable battery inside a custom enclosure.",
-  "overviewAr": "الكاميرا الكلاسيكية نموذج أولي لكاميرا رقمية مخصّصة مستوحاة من التصميم الكلاسيكي. تجمع بين الإلكترونيات والتصميم المادي والبرمجة المدمجة، وهي مبنية حول لوحة ESP32 مع شاشة TFT صغيرة وتخزين microSD وبطارية قابلة للشحن داخل هيكل مخصّص.",
-  "engine": ["ESP32"],
-  "technologies": ["ESP32", "ST7789 TFT Display", "MicroSD Storage", "Li-Po Battery", "Charging Circuitry", "Electronics", "Embedded Development"],
+  "categories": [
+    "hardware",
+    "interactive"
+  ],
+  "description": "A retro-style memory camera that displays preloaded photos as digital memories — combining 3D design, electronics and microcontroller programming.",
+  "descriptionAr": "كاميرا ذكريات بطابع كلاسيكي تعرض صوراً محمّلة مسبقاً كذكريات رقمية — تجمع بين التصميم ثلاثي الأبعاد والإلكترونيات وبرمجة المتحكمات الدقيقة.",
+  "overview": "The Retro Memory Camera is a retro-style device built at Tuwaiq Academy that displays preloaded photos as digital memories. It combines 3D design, electronics and microcontroller programming: an ESP32 drives a small ST7789 display, photos live on a microSD card, and a rechargeable Li-Po battery powers everything inside a custom enclosure.",
+  "overviewAr": "كاميرا الذكريات الكلاسيكية جهاز بطابع كلاسيكي بُني في أكاديمية طويق ويعرض صوراً محمّلة مسبقاً كذكريات رقمية. يجمع بين التصميم ثلاثي الأبعاد والإلكترونيات وبرمجة المتحكمات الدقيقة: لوحة ESP32 تشغّل شاشة ST7789 صغيرة، والصور مخزّنة على بطاقة microSD، وبطارية ليثيوم بوليمر قابلة للشحن تشغّل كل شيء داخل هيكل مخصّص.",
+  "engine": [
+    "ESP32"
+  ],
+  "technologies": [
+    "ESP32",
+    "ST7789 TFT Display",
+    "MicroSD Storage",
+    "Li-Po Battery",
+    "Charging Circuitry",
+    "3D Design",
+    "Electronics",
+    "Microcontroller Programming"
+  ],
   "sections": [
     {
       "id": "idea",
       "title": "The Idea",
       "titleAr": "الفكرة",
-      "body": "A camera that feels like an object, not just a device: a playful, retro-inspired digital camera designed and built from the electronics up.",
-      "bodyAr": "كاميرا تشعر بأنها قطعة مميزة لا مجرد جهاز: كاميرا رقمية مرحة مستوحاة من الطراز الكلاسيكي، صُمّمت وبُنيت بدءاً من الإلكترونيات."
+      "body": "Not a camera that takes pictures, but one that keeps them: a playful retro-style object that shows preloaded photos as digital memories.",
+      "bodyAr": "ليست كاميرا تلتقط الصور، بل كاميرا تحتفظ بها: قطعة مرحة بطابع كلاسيكي تعرض صوراً محمّلة مسبقاً كذكريات رقمية."
     },
-    { "id": "concept", "title": "Concept Design", "titleAr": "تصميم الفكرة", "body": "", "bodyAr": "", "images": [] },
+    {
+      "id": "concept",
+      "title": "Concept Design",
+      "titleAr": "تصميم الفكرة",
+      "body": "",
+      "bodyAr": "",
+      "images": []
+    },
     {
       "id": "electronics",
       "title": "Electronics Development",
       "titleAr": "تطوير الإلكترونيات",
-      "body": "The camera is built around an ESP32 development board. The main components are:",
-      "bodyAr": "بُنيت الكاميرا حول لوحة تطوير ESP32. المكوّنات الرئيسية هي:",
-      "list": ["ESP32 development board", "ST7789 TFT display", "MicroSD storage", "Li-Po battery", "Charging circuitry", "Physical controls", "Electronic wiring"],
-      "listAr": ["لوحة تطوير ESP32", "شاشة ST7789 TFT", "تخزين microSD", "بطارية ليثيوم بوليمر", "دائرة شحن", "أزرار تحكم مادية", "توصيلات إلكترونية"],
+      "body": "The device is built around an ESP32 development board, programmed to load photos from microSD and show them on the display. The main components are:",
+      "bodyAr": "بُني الجهاز حول لوحة تطوير ESP32 مبرمجة لتحميل الصور من بطاقة microSD وعرضها على الشاشة. المكوّنات الرئيسية هي:",
+      "list": [
+        "ESP32 development board",
+        "ST7789 TFT display",
+        "MicroSD storage",
+        "Li-Po battery",
+        "Charging circuitry",
+        "Physical controls",
+        "Electronic wiring"
+      ],
+      "listAr": [
+        "لوحة تطوير ESP32",
+        "شاشة ST7789 TFT",
+        "تخزين microSD",
+        "بطارية ليثيوم بوليمر",
+        "دائرة شحن",
+        "أزرار تحكم مادية",
+        "توصيلات إلكترونية"
+      ],
       "images": []
     },
-    { "id": "assembly", "title": "Assembly", "titleAr": "التجميع", "body": "", "bodyAr": "", "images": [] },
+    {
+      "id": "assembly",
+      "title": "Assembly",
+      "titleAr": "التجميع",
+      "body": "",
+      "bodyAr": "",
+      "images": []
+    },
     {
       "id": "enclosure",
       "title": "Enclosure",
       "titleAr": "الهيكل",
-      "body": "All of the electronics live inside a custom enclosure. Its blue, pink, purple and white colour scheme is part of the camera's identity.",
-      "bodyAr": "تستقر جميع الإلكترونيات داخل هيكل مخصّص. ألوانه الأزرق والوردي والبنفسجي والأبيض جزء من هوية الكاميرا.",
+      "body": "All of the electronics live inside a custom 3D-designed enclosure. Its blue, pink, purple and white colour scheme is part of the camera's identity.",
+      "bodyAr": "تستقر جميع الإلكترونيات داخل هيكل مخصّص مصمّم ثلاثي الأبعاد. ألوانه الأزرق والوردي والبنفسجي والأبيض جزء من هوية الكاميرا.",
       "images": []
     },
-    { "id": "prototype", "title": "Final Prototype", "titleAr": "النموذج النهائي", "body": "", "bodyAr": "", "images": [], "layout": "wide" },
-    { "id": "demonstration", "title": "Demonstration", "titleAr": "العرض التوضيحي", "videos": [], "layout": "wide" }
+    {
+      "id": "prototype",
+      "title": "Final Prototype",
+      "titleAr": "النموذج النهائي",
+      "body": "",
+      "bodyAr": "",
+      "images": [],
+      "layout": "wide"
+    },
+    {
+      "id": "demonstration",
+      "title": "Demonstration",
+      "titleAr": "العرض التوضيحي",
+      "videos": [],
+      "layout": "wide"
+    }
   ],
   "gallery": [
-    { "src": "/projects/retro-camera/photos/IMG_3380.jpg", "alt": "Retro Camera project photograph", "altAr": "صورة من مشروع الكاميرا الكلاسيكية", "source": "IMG_3380.jpg" },
-    { "src": "/projects/retro-camera/photos/IMG_3401.jpg", "alt": "Retro Camera project photograph", "altAr": "صورة من مشروع الكاميرا الكلاسيكية", "source": "IMG_3401.jpg" },
-    { "src": "/projects/retro-camera/photos/IMG_3413.jpg", "alt": "Retro Camera project photograph", "altAr": "صورة من مشروع الكاميرا الكلاسيكية", "source": "IMG_3413.jpg" },
-    { "src": "/projects/retro-camera/photos/IMG_3477.jpg", "alt": "Retro Camera project photograph", "altAr": "صورة من مشروع الكاميرا الكلاسيكية", "source": "IMG_3477.JPG" },
-    { "src": "/projects/retro-camera/photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9.jpg", "alt": "Retro Camera project photograph", "altAr": "صورة من مشروع الكاميرا الكلاسيكية", "source": "1d3fc1e5-4b2b-42fc-8723-567725e750a9.JPG" }
+    {
+      "src": "/projects/retro-camera/photos/IMG_3380.jpg",
+      "alt": "Retro Camera project photograph",
+      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
+      "source": "IMG_3380.jpg"
+    },
+    {
+      "src": "/projects/retro-camera/photos/IMG_3401.jpg",
+      "alt": "Retro Camera project photograph",
+      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
+      "source": "IMG_3401.jpg"
+    },
+    {
+      "src": "/projects/retro-camera/photos/IMG_3413.jpg",
+      "alt": "Retro Camera project photograph",
+      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
+      "source": "IMG_3413.jpg"
+    },
+    {
+      "src": "/projects/retro-camera/photos/IMG_3477.jpg",
+      "alt": "Retro Camera project photograph",
+      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
+      "source": "IMG_3477.JPG"
+    },
+    {
+      "src": "/projects/retro-camera/photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9.jpg",
+      "alt": "Retro Camera project photograph",
+      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
+      "source": "1d3fc1e5-4b2b-42fc-8723-567725e750a9.JPG"
+    }
   ],
   "videos": [],
   "achievements": [],
@@ -56,10 +139,17 @@
   "published": true,
   "displayOrder": 3,
   "inProgress": true,
-  "theme": { "accent": "#882A2A", "coverBackground": "#EAE3F2", "coverInk": "#2B2550", "motif": "stripes" },
+  "theme": {
+    "accent": "#882A2A",
+    "coverBackground": "#EAE3F2",
+    "coverInk": "#2B2550",
+    "motif": "stripes"
+  },
   "editorNotes": [
     "The five photos were not available while building, so they were not inspected. After running `npm run media`, look at each one and move it into the right section (concept / electronics / assembly / enclosure / prototype) with a specific alt text and caption.",
     "Set coverImage to the concept render or the final prototype photo.",
-    "Never recolour the camera — its blue/pink/purple/white palette is part of the project."
-  ]
+    "Never recolour the camera — its blue/pink/purple/white palette is part of the project.",
+    "Per the CV this is a 'Retro Memory Camera' that DISPLAYS preloaded photos (it is not described as capturing photos). Keep descriptions consistent with that."
+  ],
+  "year": "2026"
 }

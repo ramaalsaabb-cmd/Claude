@@ -3,6 +3,8 @@ import type { Locale } from "@/lib/i18n";
 import type { Dictionary } from "@/content/dictionaries";
 import BlackCat from "@/components/cat/BlackCat";
 import ButtonLink, { PawIcon, HeartIcon } from "@/components/ui/Button";
+import { site } from "@/content/site";
+import { pick } from "@/lib/i18n";
 
 type Props = { locale: Locale; dict: Dictionary; projectCount: number; awardCount: number };
 
@@ -29,6 +31,15 @@ export default function Hero({ locale, dict, projectCount, awardCount }: Props) 
       <div className="relative mx-auto grid max-w-[1400px] items-center gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:gap-6 lg:px-12">
         {/* Text column */}
         <div className="relative z-10 lg:col-span-7">
+          {site.availability && (
+            <p className="fade-up mb-6 inline-flex items-center gap-2 rounded-full border border-wine/25 bg-paper/80 px-3.5 py-1.5 text-xs font-medium text-charcoal" style={{ "--d": "50ms" } as React.CSSProperties}>
+              <span className="relative flex h-2 w-2" aria-hidden="true">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-wine/50" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-wine" />
+              </span>
+              {pick(locale, site.availability, site.availabilityAr)}
+            </p>
+          )}
           <p className="fade-up tracking-label mb-6 text-xs font-semibold uppercase text-wine" style={{ "--d": "100ms" } as React.CSSProperties}>
             {h.hello}
           </p>

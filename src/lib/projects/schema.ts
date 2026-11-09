@@ -76,7 +76,7 @@ export const themeSchema = z.object({
   coverBackground: z.string().optional(),
   coverInk: z.string().optional(),
   /** Decorative motif for the generated cover. */
-  motif: z.enum(["dunes", "rings", "poster", "stripes", "grid", "wireframe", "default"]).optional(),
+  motif: z.enum(["dunes", "rings", "poster", "stripes", "grid", "wireframe", "signal", "default"]).optional(),
 });
 
 export const projectSchema = z.object({

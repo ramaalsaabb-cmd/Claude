@@ -5,58 +5,123 @@
   "titleAr": "كثيب",
   "category": "Virtual Reality / Motion Simulation / Hardware Integration",
   "categoryAr": "الواقع الافتراضي / محاكاة الحركة / دمج العتاد",
-  "categories": ["vr-mr", "hardware", "interactive"],
-  "description": "An immersive VR desert sled simulation connected to a physical sled prototype.",
-  "descriptionAr": "محاكاة غامرة بالواقع الافتراضي للتزلّج على رمال الصحراء، متصلة بنموذج أولي حقيقي لمزلجة.",
-  "overview": "KATHEEB (كثيب — Arabic for “sand dune”) is an immersive VR desert sled simulation that connects a virtual experience with a physical sled prototype, mapping movement in the virtual desert to the physical sled.",
-  "overviewAr": "كثيب محاكاة غامرة بالواقع الافتراضي للتزلّج على رمال الصحراء، تربط التجربة الافتراضية بنموذج أولي حقيقي لمزلجة، بحيث تنعكس الحركة في الصحراء الافتراضية على المزلجة الحقيقية.",
-  "engine": ["Unity", "C#"],
-  "technologies": ["Unity", "C#", "Virtual Reality", "XR", "Hardware Integration"],
+  "categories": [
+    "vr-mr",
+    "hardware",
+    "interactive"
+  ],
+  "description": "An immersive VR sled simulator for the Expo 2030 Immersive Challenge — a Unity desert experience synchronised in real time with a physical sled.",
+  "descriptionAr": "محاكي تزلّج غامر بالواقع الافتراضي ضمن تحدي إكسبو ٢٠٣٠ للتجارب الغامرة — تجربة صحراوية في Unity متزامنة لحظياً مع مزلجة حقيقية.",
+  "overview": "KATHEEB (كثيب — Arabic for “sand dune”) is an immersive VR sled experience built with Unity for Meta Quest 3. A realistic desert terrain drives the ride's movement, turns and bumps, and that motion is sent in real time to a physical sled mechanism so the body feels what the eyes see. It was developed during the Expo 2030 Immersive Challenge by Tuwaiq Academy and Misk Skills.",
+  "overviewAr": "كثيب تجربة تزلّج غامرة بالواقع الافتراضي بُنيت باستخدام Unity لنظارة Meta Quest 3. تتحكم تضاريس صحراوية واقعية في حركة المزلجة ومنعطفاتها واهتزازاتها، وتُرسل هذه الحركة لحظياً إلى آلية مزلجة حقيقية ليشعر الجسد بما تراه العين. طُوّر المشروع خلال تحدي إكسبو ٢٠٣٠ للتجارب الغامرة من أكاديمية طويق ومسك للمهارات.",
+  "engine": [
+    "Unity",
+    "C#",
+    "Meta Quest 3"
+  ],
+  "technologies": [
+    "Unity",
+    "C#",
+    "Meta Quest 3",
+    "Virtual Reality",
+    "ESP32",
+    "WebSocket",
+    "Hardware Integration"
+  ],
   "sections": [
     {
       "id": "overview",
       "title": "Overview",
       "titleAr": "نظرة عامة",
-      "body": "An immersive VR desert sled simulation that connects a virtual experience with a physical sled prototype.",
-      "bodyAr": "محاكاة غامرة بالواقع الافتراضي للتزلّج على رمال الصحراء، تربط التجربة الافتراضية بنموذج أولي حقيقي لمزلجة."
+      "body": "An immersive VR sled experience with realistic desert terrain, connected to a physical sled mechanism that moves in sync with the simulation.",
+      "bodyAr": "تجربة تزلّج غامرة بالواقع الافتراضي في تضاريس صحراوية واقعية، متصلة بآلية مزلجة حقيقية تتحرك بالتزامن مع المحاكاة."
     },
     {
       "id": "concept",
       "title": "Concept",
       "titleAr": "الفكرة",
-      "body": "The core idea is mapping virtual movement to a physical prototype: as the sled moves through the virtual desert, that movement is carried over to the physical sled.",
-      "bodyAr": "الفكرة الأساسية هي ربط الحركة الافتراضية بنموذج أولي حقيقي: فعندما تتحرك المزلجة في الصحراء الافتراضية، تنتقل هذه الحركة إلى المزلجة الحقيقية."
+      "body": "Map virtual movement to a physical prototype: as the sled travels over dunes, turns and bumps in VR, the same motion is reproduced by the physical sled.",
+      "bodyAr": "ربط الحركة الافتراضية بنموذج أولي حقيقي: عندما تعبر المزلجة الكثبان والمنعطفات والمطبات في الواقع الافتراضي، تعيد المزلجة الحقيقية إنتاج الحركة نفسها."
     },
     {
       "id": "vr-environment",
       "title": "VR Environment",
       "titleAr": "البيئة الافتراضية",
-      "body": "The VR desert environment is built in Unity, with C# driving the experience.",
-      "bodyAr": "بُنيت بيئة الصحراء الافتراضية باستخدام Unity، وتُدار التجربة بلغة C#.",
+      "body": "Built in Unity with C# for Meta Quest 3, the experience features realistic desert terrain with vehicle movement, turns and bumps.",
+      "bodyAr": "بُنيت التجربة باستخدام Unity و C# لنظارة Meta Quest 3، وتضم تضاريس صحراوية واقعية مع حركة المركبة والمنعطفات والمطبات.",
       "images": []
     },
-    { "id": "sled-prototype", "title": "Physical Sled Prototype", "titleAr": "النموذج الأولي للمزلجة", "body": "", "bodyAr": "", "images": [] },
+    {
+      "id": "sled-prototype",
+      "title": "Physical Sled Prototype",
+      "titleAr": "النموذج الأولي للمزلجة",
+      "body": "",
+      "bodyAr": "",
+      "images": []
+    },
     {
       "id": "motion",
       "title": "Motion Simulation",
       "titleAr": "محاكاة الحركة",
       "body": "Development areas included:",
       "bodyAr": "شملت مجالات التطوير:",
-      "list": ["Vehicle movement", "Sled motion control", "Terrain-related motion effects"],
-      "listAr": ["حركة المركبة", "التحكم في حركة المزلجة", "مؤثرات حركة مرتبطة بطبيعة التضاريس"]
+      "list": [
+        "Vehicle movement",
+        "Turns",
+        "Bumps and terrain-related motion"
+      ],
+      "listAr": [
+        "حركة المركبة",
+        "المنعطفات",
+        "المطبات والحركة المرتبطة بالتضاريس"
+      ]
     },
     {
       "id": "hardware",
       "title": "Hardware Integration",
       "titleAr": "دمج العتاد",
-      "body": "The project integrates the Unity experience with the physical sled prototype, so virtual motion and the physical object work together.",
-      "bodyAr": "يدمج المشروع تجربة Unity مع النموذج الأولي الحقيقي للمزلجة، لتعمل الحركة الافتراضية والجسم المادي معاً.",
+      "body": "Unity communicates with ESP32 hardware over WebSocket, transmitting real-time motion data that synchronises the physical sled mechanism with the VR simulation.",
+      "bodyAr": "يتواصل Unity مع عتاد ESP32 عبر WebSocket، لإرسال بيانات الحركة لحظياً ومزامنة آلية المزلجة الحقيقية مع محاكاة الواقع الافتراضي.",
       "images": []
     },
-    { "id": "contributions", "title": "My Contributions", "titleAr": "مساهماتي", "body": "", "bodyAr": "" },
-    { "id": "challenges", "title": "Challenges", "titleAr": "التحديات", "body": "", "bodyAr": "" },
-    { "id": "photos", "title": "Photos", "titleAr": "صور", "images": [], "layout": "wide" },
-    { "id": "videos", "title": "Demonstration Videos", "titleAr": "مقاطع العرض", "videos": [], "layout": "wide" }
+    {
+      "id": "contributions",
+      "title": "My Contributions",
+      "titleAr": "مساهماتي",
+      "body": "Working within the team during the Expo 2030 Immersive Challenge, I:",
+      "bodyAr": "ضمن الفريق خلال تحدي إكسبو ٢٠٣٠ للتجارب الغامرة، قمت بما يلي:",
+      "list": [
+        "Developed the immersive VR sled experience in Unity for Meta Quest 3",
+        "Integrated Unity with ESP32 hardware via WebSocket for real-time motion data",
+        "Contributed to the interactive VR and mechatronics prototype"
+      ],
+      "listAr": [
+        "طوّرت تجربة التزلّج الغامرة باستخدام Unity لنظارة Meta Quest 3",
+        "دمجت Unity مع عتاد ESP32 عبر WebSocket لنقل بيانات الحركة لحظياً",
+        "ساهمت في بناء النموذج الأولي التفاعلي للواقع الافتراضي والميكاترونكس"
+      ]
+    },
+    {
+      "id": "challenges",
+      "title": "Challenges",
+      "titleAr": "التحديات",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "photos",
+      "title": "Photos",
+      "titleAr": "صور",
+      "images": [],
+      "layout": "wide"
+    },
+    {
+      "id": "videos",
+      "title": "Demonstration Videos",
+      "titleAr": "مقاطع العرض",
+      "videos": [],
+      "layout": "wide"
+    }
   ],
   "gallery": [],
   "videos": [],
@@ -65,10 +130,16 @@
   "published": true,
   "displayOrder": 5,
   "inProgress": true,
-  "theme": { "accent": "#882A2A", "coverBackground": "#D9C3A5", "coverInk": "#3B2A20", "motif": "dunes" },
+  "theme": {
+    "accent": "#882A2A",
+    "coverBackground": "#D9C3A5",
+    "coverInk": "#3B2A20",
+    "motif": "dunes"
+  },
   "editorNotes": [
     "No KATHEEB media was supplied yet. Add photos of the sled / VR captures and demo videos.",
-    "Do not add actuator specs, exact electronic components or performance numbers unless confirmed.",
-    "Fill in 'My Contributions' and 'Challenges' with verified details."
-  ]
+    "Do not add actuator specs or performance numbers unless confirmed.",
+    "Challenges section is still empty."
+  ],
+  "year": "2026"
 }
