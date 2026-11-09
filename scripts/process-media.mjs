@@ -125,13 +125,27 @@ function processImage(src, outBase, manifest) {
   ensureDir(out);
   if (!upToDate(src, out)) {
     log(`  🖼  ${path.basename(src)} → ${toPublicUrl(out)}`);
+    let done = false;
     if (TOOLS.magick) {
       // auto-orient, fit inside MAX_IMAGE, strip metadata (removes GPS location from the web copy)
-      run(TOOLS.magick, [src, "-auto-orient", "-resize", `${MAX_IMAGE}x${MAX_IMAGE}>`, "-strip", ...(outExt === ".jpg" ? ["-quality", "86"] : []), out]);
+      try {
+        run(TOOLS.magick, [src, "-auto-orient", "-resize", `${MAX_IMAGE}x${MAX_IMAGE}>`, "-strip", ...(outExt === ".jpg" ? ["-quality", "86"] : []), out]);
+        done = true;
+      } catch (e) {
+        if (![".heic", ".heif"].includes(ext)) throw e;
+      }
+    }
+    if (!done && [".heic", ".heif"].includes(ext) && spawnSync("sips", ["--help"], { stdio: "ignore" }).error === undefined) {
+      // macOS built-in converter for iPhone photos
+      run("sips", ["-s", "format", "jpeg", "-Z", String(MAX_IMAGE), src, "--out", out]);
+      done = true;
+    }
+    if (done) {
+      /* converted */
     } else if ([".jpg", ".jpeg", ".png"].includes(ext)) {
       fs.copyFileSync(src, out);
     } else {
-      return warn(`ImageMagick needed to convert ${path.basename(src)}`);
+      return warn(`Could not convert ${path.basename(src)} — export it as JPG (iPhone: Settings → Camera → Formats → Most Compatible) or install ImageMagick with HEIC support.`);
     }
   }
   const info = probe(out);

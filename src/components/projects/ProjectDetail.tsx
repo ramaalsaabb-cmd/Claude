@@ -119,7 +119,9 @@ export default function ProjectDetail({ project: p, locale, dict, position, tota
     : p.cover
       ? { src: p.cover.src, alt: p.cover.alt }
       : null;
-  const heroIsPoster = p.theme?.motif === "poster" || (p.cover?.height ?? 0) > (p.cover?.width ?? 1);
+  // Show the whole image (with a soft blurred backdrop) unless it is already wide
+  const coverRatio = p.cover?.width && p.cover?.height ? p.cover.width / p.cover.height : 16 / 9;
+  const heroIsPoster = p.theme?.motif === "poster" || coverRatio < 1.5;
 
   const renderVideo = (v: ResolvedVideo, key: string) => {
     const vt = pick(locale, v.title, v.titleAr);

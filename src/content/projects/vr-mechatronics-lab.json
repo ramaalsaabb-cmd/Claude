@@ -100,7 +100,13 @@
       "id": "videos",
       "title": "Videos",
       "titleAr": "مقاطع الفيديو",
-      "videos": [],
+      "videos": [
+        {
+          "youtubeId": "AerBoTHjxKo",
+          "title": "VR Mechatronics Lab — video",
+          "titleAr": "مختبر الميكاترونكس الافتراضي — فيديو"
+        }
+      ],
       "layout": "wide"
     }
   ],
@@ -119,7 +125,8 @@
   },
   "editorNotes": [
     "Experiments (component identification, LED wiring, simulated Arduino programming) come from the CV.",
-    "No media supplied yet."
+    "No media supplied yet.",
+    "YouTube video AerBoTHjxKo supplied by Rama; it could not be watched from the build environment, so no caption was written."
   ],
   "year": "2026"
 }

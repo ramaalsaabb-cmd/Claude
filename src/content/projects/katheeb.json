@@ -47,17 +47,47 @@
       "id": "vr-environment",
       "title": "VR Environment",
       "titleAr": "البيئة الافتراضية",
-      "body": "Built in Unity with C# for Meta Quest 3, the experience features realistic desert terrain with vehicle movement, turns and bumps.",
-      "bodyAr": "بُنيت التجربة باستخدام Unity و C# لنظارة Meta Quest 3، وتضم تضاريس صحراوية واقعية مع حركة المركبة والمنعطفات والمطبات.",
-      "images": []
+      "body": [
+        "Built in Unity with C# for Meta Quest 3. The experience opens in a traditional Bedouin tent, where a menu lets you start the experience or choose a character.",
+        "On the ride, the sled is pulled by rope behind a vehicle across realistic desert dunes, with movement, turns and bumps."
+      ],
+      "bodyAr": [
+        "بُنيت التجربة باستخدام Unity و C# لنظارة Meta Quest 3. تبدأ داخل خيمة بدوية تقليدية، حيث تتيح القائمة بدء التجربة أو اختيار الشخصية.",
+        "أثناء الرحلة تُسحب المزلجة بحبل خلف مركبة عبر كثبان صحراوية واقعية، مع الحركة والمنعطفات والمطبات."
+      ],
+      "images": [
+        {
+          "src": "/projects/katheeb/screenshots/katheeb-tent-menu.jpg",
+          "alt": "KATHEEB start menu inside a Bedouin tent, with the كثيب logo and buttons to start the experience and choose a character.",
+          "altAr": "قائمة بدء كثيب داخل خيمة بدوية، مع شعار كثيب وزرّي بدء التجربة واختيار الشخصية.",
+          "caption": "Start menu in the Bedouin tent",
+          "captionAr": "قائمة البدء داخل الخيمة البدوية"
+        },
+        {
+          "src": "/projects/katheeb/screenshots/katheeb-desert-ride.jpg",
+          "alt": "VR view from the sled: a pickup truck tows the sled by rope across orange desert dunes.",
+          "altAr": "مشهد الواقع الافتراضي من المزلجة: شاحنة تسحب المزلجة بحبل عبر كثبان صحراوية برتقالية.",
+          "caption": "The desert ride",
+          "captionAr": "رحلة الصحراء"
+        }
+      ],
+      "layout": "wide"
     },
     {
       "id": "sled-prototype",
       "title": "Physical Sled Prototype",
       "titleAr": "النموذج الأولي للمزلجة",
-      "body": "",
-      "bodyAr": "",
-      "images": []
+      "body": "The physical sled is a sled-shaped seat mounted on a frame above a moving base, so it can tilt in response to the ride.",
+      "bodyAr": "المزلجة الحقيقية مقعد على شكل مزلجة مثبّت على هيكل فوق قاعدة متحركة، لتميل استجابةً للرحلة.",
+      "images": [
+        {
+          "src": "/projects/katheeb/screenshots/katheeb-physical-sled.jpg",
+          "alt": "The physical sled prototype: a light wooden sled-shaped seat on a blue frame, mounted on a moving base.",
+          "altAr": "النموذج الأولي للمزلجة الحقيقية: مقعد خشبي فاتح على شكل مزلجة فوق هيكل أزرق، مثبّت على قاعدة متحركة.",
+          "caption": "The physical sled prototype",
+          "captionAr": "النموذج الأولي للمزلجة"
+        }
+      ]
     },
     {
       "id": "motion",
@@ -119,7 +149,17 @@
       "id": "videos",
       "title": "Demonstration Videos",
       "titleAr": "مقاطع العرض",
-      "videos": [],
+      "videos": [
+        {
+          "src": "/projects/katheeb/videos/katheeb-demo.mp4",
+          "poster": "/projects/katheeb/videos/katheeb-demo-poster.jpg",
+          "title": "KATHEEB demo",
+          "titleAr": "عرض كثيب",
+          "caption": "From the tent menu to the dunes: the VR view (top) plays alongside the physical sled (bottom), which moves in sync with the ride.",
+          "captionAr": "من قائمة الخيمة إلى الكثبان: يظهر مشهد الواقع الافتراضي (أعلى) بجانب المزلجة الحقيقية (أسفل) التي تتحرك بالتزامن مع الرحلة.",
+          "source": "42aaa734-96ad-4046-aca6-dfe9a009b635.MOV"
+        }
+      ],
       "layout": "wide"
     }
   ],
@@ -137,9 +177,9 @@
     "motif": "dunes"
   },
   "editorNotes": [
-    "No KATHEEB media was supplied yet. Add photos of the sled / VR captures and demo videos.",
-    "Do not add actuator specs or performance numbers unless confirmed.",
-    "Challenges section is still empty."
+    "Demo video + stills from 42aaa734-96ad-4046-aca6-dfe9a009b635.MOV (inspected: tent menu, desert ride, physical sled split-screen).",
+    "Challenges section still empty."
   ],
-  "year": "2026"
+  "year": "2026",
+  "coverImage": "/projects/katheeb/screenshots/katheeb-desert-ride.jpg"
 }

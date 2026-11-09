@@ -34,7 +34,7 @@
     "Haptic Interaction",
     "Hardware/Software Integration"
   ],
-  "coverImage": "/projects/thabat/cover/thabat-cover.jpg",
+  "coverImage": "/projects/thabat/screenshots/thabat-start.jpg",
   "sections": [
     {
       "id": "overview",
@@ -47,10 +47,39 @@
       "id": "experience",
       "title": "The Experience",
       "titleAr": "التجربة",
-      "body": "",
-      "bodyAr": "",
-      "images": [],
-      "videos": []
+      "body": [
+        "THABAT runs in passthrough mixed reality: virtual wires, a device and cutting tools appear on a real table, and on-screen instructions guide the trainee — for example, “Identify the safe wire. Focus on hand stability.”",
+        "Each level ends with a result screen. After the final level, a summary shows time, score, warnings and danger for every level, plus overall totals."
+      ],
+      "bodyAr": [
+        "يعمل ثبات بتقنية الواقع المختلط مع رؤية العالم الحقيقي: تظهر أسلاك افتراضية وجهاز وأدوات قطع فوق طاولة حقيقية، وتوجّه التعليمات المتدرّب — مثل: «حدّد السلك الآمن. ركّز على ثبات يدك».",
+        "تنتهي كل مرحلة بشاشة نتيجة، وبعد المرحلة الأخيرة يعرض ملخص الوقت والدرجة والتحذيرات ومستوى الخطر لكل مرحلة مع الإجمالي."
+      ],
+      "images": [
+        {
+          "src": "/projects/thabat/screenshots/thabat-start.jpg",
+          "alt": "Headset view at the start of training: a green Start panel above a real table, virtual pliers in the foreground and the THABAT dashboard open on a laptop showing STABLE.",
+          "altAr": "لقطة من النظارة في بداية التدريب: لوحة بدء خضراء فوق طاولة حقيقية، وكمّاشة افتراضية في المقدمة، ولوحة متابعة ثبات مفتوحة على حاسوب محمول وتعرض حالة STABLE.",
+          "caption": "Start of a training run",
+          "captionAr": "بداية جولة التدريب"
+        },
+        {
+          "src": "/projects/thabat/screenshots/thabat-wire.jpg",
+          "alt": "Virtual hands holding pliers over coloured coiled wires while the laptop dashboard tracks stability and a warning counter floats nearby.",
+          "altAr": "يدان افتراضيتان تمسكان كمّاشة فوق أسلاك ملفوفة ملوّنة، بينما تتابع لوحة الحاسوب الثبات ويظهر عدّاد التحذيرات بالقرب.",
+          "caption": "Working on the wires",
+          "captionAr": "العمل على الأسلاك"
+        },
+        {
+          "src": "/projects/thabat/screenshots/thabat-summary.jpg",
+          "alt": "“Success — Training completed, mission successful” screen listing time, score, warnings and danger for three levels, with a final summary.",
+          "altAr": "شاشة «نجاح — اكتمل التدريب، المهمة ناجحة» تعرض الوقت والدرجة والتحذيرات ومستوى الخطر لثلاث مراحل مع ملخص نهائي.",
+          "caption": "End-of-training summary",
+          "captionAr": "ملخص نهاية التدريب"
+        }
+      ],
+      "videos": [],
+      "layout": "wide"
     },
     {
       "id": "hardware",
@@ -113,7 +142,9 @@
           "poster": "/projects/thabat/videos/thabat-demo-poster.jpg",
           "title": "THABAT demonstration video",
           "titleAr": "فيديو عرض مشروع ثبات",
-          "source": "VIDEO-2026-09-10-23-17-40.mov"
+          "source": "VIDEO-2026-09-10-23-17-40.mov",
+          "caption": "Mixed-reality headset capture of a full training run: identifying the safe wire with virtual tools while the live THABAT dashboard reports stability, ending with the three-level summary.",
+          "captionAr": "تسجيل من نظارة الواقع المختلط لجولة تدريب كاملة: تحديد السلك الآمن بأدوات افتراضية بينما تعرض لوحة ثبات المباشرة حالة الثبات، وتنتهي بملخص المراحل الثلاث."
         }
       ]
     },
@@ -170,8 +201,8 @@
     "motif": "rings"
   },
   "editorNotes": [
-    "Demo video: run `npm run media` after placing VIDEO-2026-09-10-23-17-40.mov in media-source/incoming/. Watch it, then add a factual caption.",
-    "Add photos of the glove / hardware to the 'hardware' section, and headset captures to 'experience'."
+    "Demo video and stills come from VIDEO-2026-09-10-23-17-40.mov (inspected).",
+    "Still missing: photos of the physical glove / hardware for the 'hardware' section."
   ],
   "year": "2026"
 }

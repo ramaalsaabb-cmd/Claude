@@ -5,13 +5,21 @@
   "titleAr": "مشروع النمذجة ثلاثية الأبعاد في Maya",
   "category": "3D Modeling / Autodesk Maya / Environment Modeling",
   "categoryAr": "النمذجة ثلاثية الأبعاد / Autodesk Maya / نمذجة البيئات",
-  "categories": ["3d-modeling"],
+  "categories": [
+    "3d-modeling"
+  ],
   "description": "A stylized 3D building model created in Autodesk Maya — two connected structures with wood-textured walls and dark red roofs.",
   "descriptionAr": "نموذج مبنى ثلاثي الأبعاد بأسلوب فني مبسّط، صُمّم في Autodesk Maya — مبنيان متصلان بجدران بملمس خشبي وأسقف حمراء داكنة.",
   "overview": "This project showcases my 3D modeling work in Autodesk Maya: a stylized building made of two connected structures, with decorative architectural details and its own materials.",
   "overviewAr": "يعرض هذا المشروع عملي في النمذجة ثلاثية الأبعاد باستخدام Autodesk Maya: مبنى بأسلوب فني مبسّط يتكوّن من مبنيين متصلين، مع تفاصيل معمارية زخرفية وخامات خاصة به.",
-  "engine": ["Autodesk Maya"],
-  "technologies": ["Autodesk Maya", "3D Modeling", "Environment Modeling"],
+  "engine": [
+    "Autodesk Maya"
+  ],
+  "technologies": [
+    "Autodesk Maya",
+    "3D Modeling",
+    "Environment Modeling"
+  ],
   "coverImage": "/projects/maya-3d-modeling/screenshots/maya-building.png",
   "sections": [
     {
@@ -50,8 +58,22 @@
       "titleAr": "الهندسة والخامات",
       "body": "Visible in the model:",
       "bodyAr": "ما يظهر في النموذج:",
-      "list": ["Two connected building structures", "Light wood-textured walls", "Dark reddish roofs", "Decorative architectural elements", "A small entrance", "Stylized geometry and materials"],
-      "listAr": ["مبنيان متصلان", "جدران بملمس خشبي فاتح", "أسقف حمراء داكنة", "عناصر معمارية زخرفية", "مدخل صغير", "هندسة وخامات بأسلوب فني مبسّط"]
+      "list": [
+        "Two connected building structures",
+        "Light wood-textured walls",
+        "Dark reddish roofs",
+        "Decorative architectural elements",
+        "A small entrance",
+        "Stylized geometry and materials"
+      ],
+      "listAr": [
+        "مبنيان متصلان",
+        "جدران بملمس خشبي فاتح",
+        "أسقف حمراء داكنة",
+        "عناصر معمارية زخرفية",
+        "مدخل صغير",
+        "هندسة وخامات بأسلوب فني مبسّط"
+      ]
     },
     {
       "id": "presentation",
@@ -63,13 +85,22 @@
           "src": "/projects/maya-3d-modeling/videos/maya-presentation.mp4",
           "webm": "/projects/maya-3d-modeling/videos/maya-presentation.webm",
           "poster": "/projects/maya-3d-modeling/videos/maya-presentation-poster.jpg",
-          "title": "Presentation video",
-          "titleAr": "فيديو العرض",
-          "source": "Video Project 1.mp4"
+          "title": "Modeling walkthrough in Autodesk Maya",
+          "titleAr": "جولة في النموذج داخل Autodesk Maya",
+          "source": "Video Project 1.mp4",
+          "caption": "Screen recording in Autodesk Maya moving around the house model — the exterior with its windows and door, then modelled interior details.",
+          "captionAr": "تسجيل شاشة داخل Autodesk Maya يتجوّل حول نموذج المنزل — الواجهة بنوافذها وبابها، ثم تفاصيل داخلية منمذجة."
         }
       ]
     },
-    { "id": "process", "title": "Development Process", "titleAr": "مراحل التطوير", "body": "", "bodyAr": "", "images": [] }
+    {
+      "id": "process",
+      "title": "Development Process",
+      "titleAr": "مراحل التطوير",
+      "body": "",
+      "bodyAr": "",
+      "images": []
+    }
   ],
   "gallery": [],
   "videos": [],
@@ -83,10 +114,14 @@
   "published": true,
   "displayOrder": 4,
   "inProgress": true,
-  "theme": { "accent": "#882A2A", "coverBackground": "#E8DDD2", "coverInk": "#5A2A22", "motif": "wireframe" },
+  "theme": {
+    "accent": "#882A2A",
+    "coverBackground": "#E8DDD2",
+    "coverInk": "#5A2A22",
+    "motif": "wireframe"
+  },
   "editorNotes": [
-    "Screenshot: place image(20261109-104633).png in media-source/incoming/ and run `npm run media`.",
-    "Video Project 1.mp4 is wired to the 'Final Presentation' section as you intended, but it could NOT be checked against the model. Watch it after processing; if it shows something else, remove it from this file.",
-    "3D viewer appears only when a real export exists at public/projects/maya-3d-modeling/models/building.glb."
+    "Video Project 1.mp4 inspected: a Maya viewport recording of a house model (exterior + interior). The video poster is used as the cover until the screenshot image(20261109-104633).png is uploaded.",
+    "3D viewer appears only when public/projects/maya-3d-modeling/models/building.glb exists."
   ]
 }

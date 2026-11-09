@@ -1,1 +1,78 @@
-{}
+{
+  "/projects/katheeb/screenshots/katheeb-desert-ride.jpg": {
+    "width": 576,
+    "height": 322
+  },
+  "/projects/katheeb/screenshots/katheeb-physical-sled.jpg": {
+    "width": 576,
+    "height": 322
+  },
+  "/projects/katheeb/screenshots/katheeb-tent-menu.jpg": {
+    "width": 576,
+    "height": 324
+  },
+  "/projects/katheeb/videos/katheeb-demo-poster.jpg": {
+    "width": 576,
+    "height": 768
+  },
+  "/projects/katheeb/videos/katheeb-demo.mp4": {
+    "width": 576,
+    "height": 768,
+    "duration": 70.1
+  },
+  "/projects/maya-3d-modeling/videos/maya-presentation-poster.jpg": {
+    "width": 1920,
+    "height": 1080
+  },
+  "/projects/maya-3d-modeling/videos/maya-presentation.mp4": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 23.1
+  },
+  "/projects/retro-camera/photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9.jpg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/projects/retro-camera/photos/IMG_3380.jpg": {
+    "width": 561,
+    "height": 481
+  },
+  "/projects/retro-camera/photos/IMG_3401.jpg": {
+    "width": 1920,
+    "height": 2560
+  },
+  "/projects/retro-camera/photos/IMG_3477.jpg": {
+    "width": 900,
+    "height": 1600
+  },
+  "/projects/retro-camera/videos/retro-camera-demo-poster.jpg": {
+    "width": 478,
+    "height": 850
+  },
+  "/projects/retro-camera/videos/retro-camera-demo.mp4": {
+    "width": 478,
+    "height": 850,
+    "duration": 8.4
+  },
+  "/projects/thabat/screenshots/thabat-start.jpg": {
+    "width": 816,
+    "height": 464
+  },
+  "/projects/thabat/screenshots/thabat-summary.jpg": {
+    "width": 816,
+    "height": 464
+  },
+  "/projects/thabat/screenshots/thabat-wire.jpg": {
+    "width": 816,
+    "height": 464
+  },
+  "/projects/thabat/videos/thabat-demo-poster.jpg": {
+    "width": 816,
+    "height": 464
+  },
+  "/projects/thabat/videos/thabat-demo.mp4": {
+    "width": 816,
+    "height": 464,
+    "duration": 31.1
+  }
+}

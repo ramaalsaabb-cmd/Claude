@@ -38,9 +38,19 @@
       "id": "concept",
       "title": "Concept Design",
       "titleAr": "تصميم الفكرة",
-      "body": "",
-      "bodyAr": "",
-      "images": []
+      "body": "The camera started as a 3D concept: a soft, toy-like body in blue and white, a purple top button and a pink lens. The final presentation board explains that the idea began from an earlier “Makkah camera” and was developed and reimagined into the “Tuwaiq camera”.",
+      "bodyAr": "بدأت الكاميرا كتصميم ثلاثي الأبعاد: جسم ناعم يشبه الألعاب باللونين الأزرق والأبيض، وزر علوي بنفسجي، وعدسة وردية. وتوضح لوحة العرض النهائية أن الفكرة بدأت من «كاميرا مكة» ثم طُوّرت وأُعيد تصورها لتصبح «كاميرا طويق».",
+      "images": [
+        {
+          "src": "/projects/retro-camera/photos/IMG_3380.jpg",
+          "alt": "3D concept render of the Retro Camera: a blue body with a white roll-shaped side, a purple top button and a pink lens.",
+          "altAr": "تصميم ثلاثي الأبعاد للكاميرا الكلاسيكية: جسم أزرق مع جانب أبيض أسطواني، وزر علوي بنفسجي، وعدسة وردية.",
+          "caption": "3D concept render",
+          "captionAr": "التصميم ثلاثي الأبعاد",
+          "source": "IMG_3380.jpg"
+        }
+      ],
+      "layout": "split"
     },
     {
       "id": "electronics",
@@ -66,15 +76,33 @@
         "أزرار تحكم مادية",
         "توصيلات إلكترونية"
       ],
-      "images": []
+      "images": [
+        {
+          "src": "/projects/retro-camera/photos/IMG_3401.jpg",
+          "alt": "Hands wiring the electronics at a soldering station: a perfboard with the microcontroller board and red, green and blue jumper wires.",
+          "altAr": "أيادٍ توصل الإلكترونيات عند محطة لحام: لوحة مثقبة عليها لوحة المتحكم وأسلاك توصيل حمراء وخضراء وزرقاء.",
+          "caption": "Wiring the perfboard",
+          "captionAr": "توصيل اللوحة المثقبة",
+          "source": "IMG_3401.HEIC"
+        }
+      ]
     },
     {
       "id": "assembly",
       "title": "Assembly",
       "titleAr": "التجميع",
-      "body": "",
-      "bodyAr": "",
-      "images": []
+      "body": "The electronics were fitted into the 3D-printed enclosure on the workbench, with the display seated in its window and the perfboard and wiring packed inside.",
+      "bodyAr": "رُكّبت الإلكترونيات داخل الهيكل المطبوع ثلاثي الأبعاد على طاولة العمل، مع تثبيت الشاشة في نافذتها وترتيب اللوحة المثقبة والأسلاك في الداخل.",
+      "images": [
+        {
+          "src": "/projects/retro-camera/photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9.jpg",
+          "alt": "The open turquoise 3D-printed enclosure during assembly, showing the small display, perfboard and wiring, surrounded by cutters and soldering tools.",
+          "altAr": "الهيكل الفيروزي المطبوع ثلاثي الأبعاد مفتوحاً أثناء التجميع، تظهر فيه الشاشة الصغيرة واللوحة المثقبة والأسلاك، وحوله أدوات القطع واللحام.",
+          "caption": "Fitting the electronics into the enclosure",
+          "captionAr": "تركيب الإلكترونيات داخل الهيكل",
+          "source": "1d3fc1e5-4b2b-42fc-8723-567725e750a9.JPG"
+        }
+      ]
     },
     {
       "id": "enclosure",
@@ -88,49 +116,44 @@
       "id": "prototype",
       "title": "Final Prototype",
       "titleAr": "النموذج النهائي",
-      "body": "",
-      "bodyAr": "",
-      "images": [],
-      "layout": "wide"
+      "body": "The finished camera, decorated with a pearl strip and a pink lens, presented next to the project's story board.",
+      "bodyAr": "الكاميرا النهائية مزيّنة بشريط من اللؤلؤ وعدسة وردية، معروضة بجانب لوحة قصة المشروع.",
+      "images": [
+        {
+          "src": "/projects/retro-camera/photos/IMG_3477.jpg",
+          "alt": "The finished turquoise Retro Camera held in hand beside a tablet showing the project story in Arabic, with an earlier grey camera model nearby.",
+          "altAr": "الكاميرا الكلاسيكية النهائية باللون الفيروزي في اليد بجانب جهاز لوحي يعرض قصة المشروع بالعربية، مع نموذج كاميرا رمادي سابق بالقرب.",
+          "caption": "The finished prototype at the presentation",
+          "captionAr": "النموذج النهائي أثناء العرض",
+          "source": "IMG_3477.JPG"
+        }
+      ],
+      "layout": "split"
     },
     {
       "id": "demonstration",
       "title": "Demonstration",
       "titleAr": "العرض التوضيحي",
-      "videos": [],
+      "videos": [
+        {
+          "src": "/projects/retro-camera/videos/retro-camera-demo.mp4",
+          "poster": "/projects/retro-camera/videos/retro-camera-demo-poster.jpg",
+          "title": "Retro Camera demo",
+          "titleAr": "عرض الكاميرا الكلاسيكية",
+          "caption": "Pressing the top button cycles through the preloaded photos on the camera's built-in screen.",
+          "captionAr": "الضغط على الزر العلوي يعرض الصور المحمّلة مسبقاً واحدة تلو الأخرى على شاشة الكاميرا.",
+          "source": "d3ffedf5-059e-481f-b18c-c6b8f345a25a.MP4"
+        }
+      ],
       "layout": "wide"
     }
   ],
   "gallery": [
     {
-      "src": "/projects/retro-camera/photos/IMG_3380.jpg",
-      "alt": "Retro Camera project photograph",
-      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
-      "source": "IMG_3380.jpg"
-    },
-    {
-      "src": "/projects/retro-camera/photos/IMG_3401.jpg",
-      "alt": "Retro Camera project photograph",
-      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
-      "source": "IMG_3401.jpg"
-    },
-    {
       "src": "/projects/retro-camera/photos/IMG_3413.jpg",
       "alt": "Retro Camera project photograph",
       "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
       "source": "IMG_3413.jpg"
-    },
-    {
-      "src": "/projects/retro-camera/photos/IMG_3477.jpg",
-      "alt": "Retro Camera project photograph",
-      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
-      "source": "IMG_3477.JPG"
-    },
-    {
-      "src": "/projects/retro-camera/photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9.jpg",
-      "alt": "Retro Camera project photograph",
-      "altAr": "صورة من مشروع الكاميرا الكلاسيكية",
-      "source": "1d3fc1e5-4b2b-42fc-8723-567725e750a9.JPG"
     }
   ],
   "videos": [],
@@ -146,10 +169,10 @@
     "motif": "stripes"
   },
   "editorNotes": [
-    "The five photos were not available while building, so they were not inspected. After running `npm run media`, look at each one and move it into the right section (concept / electronics / assembly / enclosure / prototype) with a specific alt text and caption.",
-    "Set coverImage to the concept render or the final prototype photo.",
-    "Never recolour the camera — its blue/pink/purple/white palette is part of the project.",
-    "Per the CV this is a 'Retro Memory Camera' that DISPLAYS preloaded photos (it is not described as capturing photos). Keep descriptions consistent with that."
+    "All supplied photos were inspected and placed in sections. IMG_3413.jpg was not uploaded yet (kept in gallery, hidden until added).",
+    "IMG_3380 is only 561×481 px — a higher-resolution render would look sharper as the cover."
   ],
-  "year": "2026"
+  "year": "2026",
+  "coverImage": "/projects/retro-camera/photos/IMG_3380.jpg",
+  "heroImage": "/projects/retro-camera/photos/IMG_3380.jpg"
 }
