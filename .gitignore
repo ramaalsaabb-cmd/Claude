@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original (unprocessed) media can be very large — keep it out of git by default.
+# The web-ready copies in public/projects/ ARE committed.
+media-source/incoming/*
+media-source/_unassigned/*
+media-source/*/*.mov
+media-source/*/*.MOV
+media-source/*/*.mp4
+media-source/*/*.MP4
+!media-source/**/.gitkeep

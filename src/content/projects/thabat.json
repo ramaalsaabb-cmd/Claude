@@ -1,0 +1,149 @@
+{
+  "id": "thabat",
+  "slug": "thabat",
+  "title": "THABAT",
+  "titleAr": "ثبات",
+  "category": "Mixed Reality / Robotics / Hardware / Haptic Technology",
+  "categoryAr": "الواقع المختلط / الروبوتات / العتاد / التقنيات اللمسية",
+  "categories": [
+    "vr-mr",
+    "hardware",
+    "interactive"
+  ],
+  "description": "A mixed-reality bomb-disposal training experience that pairs immersive simulation with a physical haptic glove.",
+  "descriptionAr": "تجربة تدريبية بالواقع المختلط لتفكيك القنابل، تجمع بين المحاكاة الغامرة وقفاز لمسي حقيقي.",
+  "overview": [
+    "THABAT is a mixed-reality training experience for bomb disposal. It combines an immersive simulation running on Meta Quest with a physical haptic glove, so the training happens both in the headset and in the hand.",
+    "The project brings software and hardware together: a Unity experience on one side, and an ESP32-based hardware layer with motion sensors and haptic interaction on the other."
+  ],
+  "overviewAr": [
+    "ثبات تجربة تدريبية بالواقع المختلط لتفكيك القنابل. تجمع بين محاكاة غامرة تعمل على Meta Quest وقفاز لمسي حقيقي، ليحدث التدريب داخل النظارة وفي يد المتدرّب معاً.",
+    "يجمع المشروع بين البرمجيات والعتاد: تجربة مبنية بـ Unity من جهة، وطبقة عتاد تعتمد على ESP32 مع حساسات حركة وتفاعل لمسي من جهة أخرى."
+  ],
+  "engine": [
+    "Unity",
+    "Meta Quest"
+  ],
+  "technologies": [
+    "Unity",
+    "Meta Quest",
+    "Mixed Reality",
+    "ESP32",
+    "Motion Sensors",
+    "Haptic Interaction",
+    "Hardware/Software Integration"
+  ],
+  "coverImage": "/projects/thabat/cover/thabat-cover.jpg",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "titleAr": "نظرة عامة",
+      "body": "A mixed-reality approach to bomb-disposal training: the trainee works inside an immersive simulation while wearing a physical haptic glove, connecting what they see in the headset with what they feel in their hand.",
+      "bodyAr": "مقاربة بالواقع المختلط للتدريب على تفكيك القنابل: يعمل المتدرّب داخل محاكاة غامرة وهو يرتدي قفازاً لمسياً حقيقياً، فيرتبط ما يراه في النظارة بما يشعر به في يده."
+    },
+    {
+      "id": "experience",
+      "title": "The Experience",
+      "titleAr": "التجربة",
+      "body": "",
+      "bodyAr": "",
+      "images": [],
+      "videos": []
+    },
+    {
+      "id": "hardware",
+      "title": "Hardware and Haptic Glove",
+      "titleAr": "العتاد والقفاز اللمسي",
+      "body": "The physical side of THABAT is a haptic glove. Its hardware work involves an ESP32, motion sensors and haptic interaction, integrated with the Unity experience.",
+      "bodyAr": "الجانب المادي من ثبات هو قفاز لمسي. يشمل العمل على العتاد لوحة ESP32 وحساسات حركة وتفاعلاً لمسياً، مدمجة مع تجربة Unity.",
+      "images": []
+    },
+    {
+      "id": "process",
+      "title": "Development Process",
+      "titleAr": "مراحل التطوير",
+      "body": "",
+      "bodyAr": "",
+      "images": []
+    },
+    {
+      "id": "technology",
+      "title": "Technology",
+      "titleAr": "التقنيات",
+      "list": [
+        "Unity",
+        "Meta Quest",
+        "ESP32",
+        "Motion sensors",
+        "Haptic interaction",
+        "Hardware/software integration"
+      ],
+      "listAr": [
+        "Unity",
+        "Meta Quest",
+        "ESP32",
+        "حساسات الحركة",
+        "التفاعل اللمسي",
+        "دمج العتاد والبرمجيات"
+      ]
+    },
+    {
+      "id": "demonstration",
+      "title": "Demonstration",
+      "titleAr": "العرض التوضيحي",
+      "layout": "wide",
+      "videos": [
+        {
+          "src": "/projects/thabat/videos/thabat-demo.mp4",
+          "webm": "/projects/thabat/videos/thabat-demo.webm",
+          "poster": "/projects/thabat/videos/thabat-demo-poster.jpg",
+          "title": "THABAT demonstration video",
+          "titleAr": "فيديو عرض مشروع ثبات",
+          "source": "VIDEO-2026-09-10-23-17-40.mov"
+        }
+      ]
+    },
+    {
+      "id": "achievement",
+      "title": "Achievement",
+      "titleAr": "الإنجاز",
+      "body": "THABAT won Third Place in the Robotics Track at Defensthon.",
+      "bodyAr": "حصل مشروع ثبات على المركز الثالث في مسار الروبوتات في هاكاثون Defensthon."
+    },
+    {
+      "id": "contributions",
+      "title": "My Contributions",
+      "titleAr": "مساهماتي",
+      "body": "",
+      "bodyAr": "",
+      "list": []
+    }
+  ],
+  "gallery": [],
+  "videos": [],
+  "achievements": [
+    {
+      "title": "Third Place — Robotics Track",
+      "titleAr": "المركز الثالث — مسار الروبوتات",
+      "event": "Defensthon",
+      "eventAr": "Defensthon"
+    }
+  ],
+  "featured": true,
+  "published": true,
+  "displayOrder": 1,
+  "inProgress": true,
+  "theme": {
+    "accent": "#882A2A",
+    "coverBackground": "#1E1B1B",
+    "coverInk": "#F4EEE9",
+    "motif": "rings"
+  },
+  "editorNotes": [
+    "Demo video: run `npm run media` after placing VIDEO-2026-09-10-23-17-40.mov in media-source/incoming/. Watch it, then add a factual caption.",
+    "Add verified team responsibilities to 'My Contributions' (the project was not built by Rama alone unless confirmed).",
+    "Add photos of the glove / hardware to the 'hardware' section, and headset captures to 'experience'.",
+    "Add the year once confirmed."
+  ]
+}

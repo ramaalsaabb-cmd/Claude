@@ -1,0 +1,19 @@
+{
+  "_comment": "Confirmed file → project assignments. Filenames are matched case-insensitively. Files not listed here (and not inside a media-source/<project-slug>/ folder) are moved to media-source/_unassigned for review.",
+  "files": {
+    "VIDEO-2026-09-10-23-17-40.mov": { "project": "thabat", "output": "videos/thabat-demo" },
+    "DeadlinePoster(1).pdf": { "project": "deadline", "output": "posters/deadline-poster" },
+    "DeadlinePoster.pdf": { "project": "deadline", "output": "posters/deadline-poster" },
+    "image(20261109-104633).png": { "project": "maya-3d-modeling", "output": "screenshots/maya-building" },
+    "Video Project 1.mp4": {
+      "project": "maya-3d-modeling",
+      "output": "videos/maya-presentation",
+      "verify": "Intended for the Maya project but not yet checked against the model — watch it before publishing."
+    },
+    "IMG_3380.jpg": { "project": "retro-camera", "output": "photos/IMG_3380" },
+    "IMG_3401.jpg": { "project": "retro-camera", "output": "photos/IMG_3401" },
+    "IMG_3413.jpg": { "project": "retro-camera", "output": "photos/IMG_3413" },
+    "IMG_3477.JPG": { "project": "retro-camera", "output": "photos/IMG_3477" },
+    "1d3fc1e5-4b2b-42fc-8723-567725e750a9.JPG": { "project": "retro-camera", "output": "photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9" }
+  }
+}

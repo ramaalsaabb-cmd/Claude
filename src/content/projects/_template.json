@@ -1,0 +1,69 @@
+{
+  "id": "my-new-project",
+  "slug": "my-new-project",
+  "title": "My New Project",
+  "titleAr": "مشروعي الجديد",
+  "category": "Short label, e.g. Mixed Reality / Hardware",
+  "categoryAr": "وصف قصير للفئة",
+  "categories": ["interactive"],
+  "year": "2027",
+  "description": "One or two sentences shown on the project card.",
+  "descriptionAr": "جملة أو جملتان تظهران على بطاقة المشروع.",
+  "overview": ["First paragraph of the overview.", "Second paragraph (optional)."],
+  "overviewAr": ["الفقرة الأولى.", "الفقرة الثانية (اختياري)."],
+  "role": "What I personally did on this project (only verified responsibilities).",
+  "roleAr": "ما قمت به شخصياً في هذا المشروع.",
+  "engine": ["Unity"],
+  "technologies": ["Unity", "C#"],
+  "coverImage": "/projects/my-new-project/cover/cover.jpg",
+  "heroImage": "/projects/my-new-project/photos/hero.jpg",
+  "sections": [
+    {
+      "id": "concept",
+      "title": "Concept",
+      "titleAr": "الفكرة",
+      "body": ["Paragraph one.", "Paragraph two."],
+      "bodyAr": ["الفقرة الأولى.", "الفقرة الثانية."],
+      "list": ["Optional bullet"],
+      "listAr": ["نقطة اختيارية"],
+      "layout": "split",
+      "images": [
+        {
+          "src": "/projects/my-new-project/photos/concept.jpg",
+          "alt": "Describe what is actually in the photo",
+          "altAr": "وصف محتوى الصورة",
+          "caption": "Optional caption",
+          "captionAr": "تعليق اختياري"
+        }
+      ],
+      "videos": [
+        {
+          "src": "/projects/my-new-project/videos/demo.mp4",
+          "poster": "/projects/my-new-project/videos/demo-poster.jpg",
+          "title": "Demo video",
+          "titleAr": "فيديو العرض"
+        },
+        { "youtubeId": "XXXXXXXXXXX", "title": "YouTube video", "titleAr": "فيديو يوتيوب" }
+      ]
+    }
+  ],
+  "gallery": [
+    { "src": "/projects/my-new-project/photos/01.jpg", "alt": "Describe the photo", "altAr": "وصف الصورة" }
+  ],
+  "videos": [],
+  "model3D": {
+    "src": "/projects/my-new-project/models/model.glb",
+    "alt": "Interactive 3D model",
+    "altAr": "نموذج ثلاثي الأبعاد تفاعلي"
+  },
+  "achievements": [{ "title": "First Place", "titleAr": "المركز الأول", "event": "Event name", "eventAr": "اسم الفعالية" }],
+  "githubUrl": "https://github.com/username/repo",
+  "demoUrl": "https://example.com",
+  "featured": false,
+  "published": false,
+  "displayOrder": 10,
+  "inProgress": false,
+  "theme": { "accent": "#882A2A", "coverBackground": "#E8DDD2", "coverInk": "#1E1B1B", "motif": "default" },
+  "related": [],
+  "editorNotes": ["Private notes — never shown on the site."]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "katheeb",
+  "slug": "katheeb",
+  "title": "KATHEEB",
+  "titleAr": "كثيب",
+  "category": "Virtual Reality / Motion Simulation / Hardware Integration",
+  "categoryAr": "الواقع الافتراضي / محاكاة الحركة / دمج العتاد",
+  "categories": ["vr-mr", "hardware", "interactive"],
+  "description": "An immersive VR desert sled simulation connected to a physical sled prototype.",
+  "descriptionAr": "محاكاة غامرة بالواقع الافتراضي للتزلّج على رمال الصحراء، متصلة بنموذج أولي حقيقي لمزلجة.",
+  "overview": "KATHEEB (كثيب — Arabic for “sand dune”) is an immersive VR desert sled simulation that connects a virtual experience with a physical sled prototype, mapping movement in the virtual desert to the physical sled.",
+  "overviewAr": "كثيب محاكاة غامرة بالواقع الافتراضي للتزلّج على رمال الصحراء، تربط التجربة الافتراضية بنموذج أولي حقيقي لمزلجة، بحيث تنعكس الحركة في الصحراء الافتراضية على المزلجة الحقيقية.",
+  "engine": ["Unity", "C#"],
+  "technologies": ["Unity", "C#", "Virtual Reality", "XR", "Hardware Integration"],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "titleAr": "نظرة عامة",
+      "body": "An immersive VR desert sled simulation that connects a virtual experience with a physical sled prototype.",
+      "bodyAr": "محاكاة غامرة بالواقع الافتراضي للتزلّج على رمال الصحراء، تربط التجربة الافتراضية بنموذج أولي حقيقي لمزلجة."
+    },
+    {
+      "id": "concept",
+      "title": "Concept",
+      "titleAr": "الفكرة",
+      "body": "The core idea is mapping virtual movement to a physical prototype: as the sled moves through the virtual desert, that movement is carried over to the physical sled.",
+      "bodyAr": "الفكرة الأساسية هي ربط الحركة الافتراضية بنموذج أولي حقيقي: فعندما تتحرك المزلجة في الصحراء الافتراضية، تنتقل هذه الحركة إلى المزلجة الحقيقية."
+    },
+    {
+      "id": "vr-environment",
+      "title": "VR Environment",
+      "titleAr": "البيئة الافتراضية",
+      "body": "The VR desert environment is built in Unity, with C# driving the experience.",
+      "bodyAr": "بُنيت بيئة الصحراء الافتراضية باستخدام Unity، وتُدار التجربة بلغة C#.",
+      "images": []
+    },
+    { "id": "sled-prototype", "title": "Physical Sled Prototype", "titleAr": "النموذج الأولي للمزلجة", "body": "", "bodyAr": "", "images": [] },
+    {
+      "id": "motion",
+      "title": "Motion Simulation",
+      "titleAr": "محاكاة الحركة",
+      "body": "Development areas included:",
+      "bodyAr": "شملت مجالات التطوير:",
+      "list": ["Vehicle movement", "Sled motion control", "Terrain-related motion effects"],
+      "listAr": ["حركة المركبة", "التحكم في حركة المزلجة", "مؤثرات حركة مرتبطة بطبيعة التضاريس"]
+    },
+    {
+      "id": "hardware",
+      "title": "Hardware Integration",
+      "titleAr": "دمج العتاد",
+      "body": "The project integrates the Unity experience with the physical sled prototype, so virtual motion and the physical object work together.",
+      "bodyAr": "يدمج المشروع تجربة Unity مع النموذج الأولي الحقيقي للمزلجة، لتعمل الحركة الافتراضية والجسم المادي معاً.",
+      "images": []
+    },
+    { "id": "contributions", "title": "My Contributions", "titleAr": "مساهماتي", "body": "", "bodyAr": "" },
+    { "id": "challenges", "title": "Challenges", "titleAr": "التحديات", "body": "", "bodyAr": "" },
+    { "id": "photos", "title": "Photos", "titleAr": "صور", "images": [], "layout": "wide" },
+    { "id": "videos", "title": "Demonstration Videos", "titleAr": "مقاطع العرض", "videos": [], "layout": "wide" }
+  ],
+  "gallery": [],
+  "videos": [],
+  "achievements": [],
+  "featured": false,
+  "published": true,
+  "displayOrder": 5,
+  "inProgress": true,
+  "theme": { "accent": "#882A2A", "coverBackground": "#D9C3A5", "coverInk": "#3B2A20", "motif": "dunes" },
+  "editorNotes": [
+    "No KATHEEB media was supplied yet. Add photos of the sled / VR captures and demo videos.",
+    "Do not add actuator specs, exact electronic components or performance numbers unless confirmed.",
+    "Fill in 'My Contributions' and 'Challenges' with verified details."
+  ]
+}

@@ -1,0 +1,335 @@
+/** Plural variants keyed by Intl.PluralRules categories ("other" is required). */
+export type PluralForms = Partial<Record<Intl.LDMLPluralRule, string>> & { other: string };
+
+/** Fill "{name}" placeholders. */
+export function fmt(template: string, vars: Record<string, string | number>): string {
+  return template.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? `{${k}}`));
+}
+
+/** Pick the right plural form for n in the given locale and fill {n}. */
+export function plural(forms: PluralForms, n: number, locale: "en" | "ar"): string {
+  const rule = new Intl.PluralRules(locale).select(n);
+  return fmt(forms[rule] ?? forms.other, { n });
+}
+
+/**
+ * UI strings for both languages.
+ * Edit text here — components never hardcode copy.
+ */
+const en = {
+  meta: {
+    title: "Rama Alsaab — Creative Developer",
+    description:
+      "Portfolio of Rama Alsaab, a creative developer and Information Technology student building VR and mixed-reality experiences, Unreal Engine games, 3D models and hardware prototypes.",
+  },
+  a11y: {
+    skipToContent: "Skip to content",
+    mainNav: "Main navigation",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+    switchLanguage: "التبديل إلى العربية",
+    petCat: "Pet the black cat",
+    projectFilters: "Filter projects by category",
+    closeViewer: "Close image viewer",
+    nextImage: "Next image",
+    previousImage: "Previous image",
+    zoomIn: "Zoom in",
+    zoomOut: "Zoom out",
+    imageOf: "Image {i} of {n}",
+    playVideo: "Play video: {title}",
+    openProject: "Open project: {title}",
+    sectionIndex: "Sections on this page",
+    backToTop: "Back to top",
+  },
+  nav: {
+    home: "Home",
+    about: "About",
+    projects: "Projects",
+    skills: "Skills",
+    experience: "Experience",
+    contact: "Contact",
+  },
+  langLabel: "عربي",
+  hero: {
+    hello: "Hello, I'm",
+    first: "Rama",
+    last: "Alsaab",
+    role: "Creative Developer",
+    tagline: "I build interactive experiences where creativity, technology, and imagination meet.",
+    viewWork: "View my work",
+    aboutMe: "About me",
+    scroll: "Scroll down",
+    statProjects: "Projects",
+    statAward: "Award",
+    statAwards: "Awards",
+    statCuriosity: "Curiosity",
+    note: "same curious girl,\nbrighter builds",
+  },
+  cat: {
+    messages: ["meow.", "hi there ♡", "keep exploring", "purr…", "you found me!", "one more project?"],
+  },
+  about: {
+    title: "About Me",
+    lead: "Software, hardware, and a little imagination.",
+    basedIn: "Based in",
+    education: "Education",
+    graduation: "Expected graduation",
+    interests: "Interests",
+    background: "Technical background",
+    downloadCv: "Download CV",
+    note: "a curious mind\n& a black cat",
+  },
+  projects: {
+    title: "Selected Projects",
+    allTitle: "All Projects",
+    intro:
+      "Virtual worlds connected to physical prototypes, games, 3D models and devices built from scratch.",
+    viewAll: "View all projects",
+    viewProject: "View project",
+    empty: "No projects in this category yet.",
+    filters: {
+      all: "All Projects",
+      "vr-mr": "VR / MR",
+      "game-dev": "Game Development",
+      hardware: "Hardware",
+      "3d-modeling": "3D Modeling",
+      interactive: "Interactive Experiences",
+    },
+    count: { one: "{n} project", other: "{n} projects" } as PluralForms,
+  },
+  project: {
+    backToProjects: "All projects",
+    category: "Category",
+    year: "Year",
+    role: "Role",
+    engine: "Built with",
+    technologies: "Technologies",
+    gallery: "Gallery",
+    videos: "Videos",
+    achievements: "Achievements",
+    links: "Links",
+    github: "View on GitHub",
+    demo: "Live demo",
+    model: "3D Model",
+    modelHint: "Drag to rotate · scroll or pinch to zoom",
+    related: "Related projects",
+    previous: "Previous",
+    next: "Next",
+    inProgress: "This case study is being expanded — more photos, videos and details are on the way.",
+    watchOnYouTube: "Watch on YouTube",
+    videoUnsupported: "Your browser can't play this video.",
+    download: "Download",
+  },
+  skills: {
+    title: "Skills",
+    intro: "The tools and areas I work with. Select a skill to see where it appears in my projects.",
+    usedIn: "Seen in",
+    noProjects: "Not featured in a published project yet.",
+    groups: {
+      languages: "Programming Languages",
+      immersive: "Immersive & Game Development",
+      modeling: "3D Modeling",
+      hardware: "Embedded Systems & Hardware",
+      tools: "Development Tools",
+    },
+  },
+  experience: {
+    title: "Experience",
+    subtitle: "Education & achievements",
+    types: {
+      education: "Education",
+      award: "Award",
+      competition: "Competition",
+      internship: "Internship",
+      coop: "COOP",
+      role: "Role",
+      hackathon: "Hackathon",
+      bootcamp: "Bootcamp",
+      certification: "Certification",
+    },
+    relatedProject: "Related project",
+  },
+  contact: {
+    title: "Contact",
+    heading: "Let's create something amazing.",
+    text: "Have an idea, a project or an opportunity in mind? I'd love to hear about it.",
+    email: "Email",
+    linkedin: "LinkedIn",
+    github: "GitHub",
+    cv: "Download CV",
+    devHint:
+      "Development note (hidden in production): no contact links are configured yet. Add them in src/content/site.ts.",
+  },
+  footer: {
+    rights: "All rights reserved.",
+    note: "Same curious girl, building brighter things",
+    built: "Designed & built with care in Riyadh",
+  },
+  notFound: {
+    title: "This page wandered off.",
+    text: "Even the cat couldn't find it.",
+    home: "Back home",
+  },
+};
+
+export type Dictionary = typeof en;
+
+const ar: Dictionary = {
+  meta: {
+    title: "راما الصعب — مطوّرة إبداعية",
+    description:
+      "معرض أعمال راما الصعب، مطوّرة إبداعية وطالبة تقنية معلومات، تبني تجارب الواقع الافتراضي والمختلط، وألعاب Unreal Engine، ونماذج ثلاثية الأبعاد، ونماذج أولية للعتاد.",
+  },
+  a11y: {
+    skipToContent: "انتقل إلى المحتوى",
+    mainNav: "التنقل الرئيسي",
+    openMenu: "فتح القائمة",
+    closeMenu: "إغلاق القائمة",
+    switchLanguage: "Switch to English",
+    petCat: "داعب القطة السوداء",
+    projectFilters: "تصفية المشاريع حسب الفئة",
+    closeViewer: "إغلاق عارض الصور",
+    nextImage: "الصورة التالية",
+    previousImage: "الصورة السابقة",
+    zoomIn: "تكبير",
+    zoomOut: "تصغير",
+    imageOf: "الصورة {i} من {n}",
+    playVideo: "تشغيل الفيديو: {title}",
+    openProject: "فتح المشروع: {title}",
+    sectionIndex: "أقسام هذه الصفحة",
+    backToTop: "العودة إلى الأعلى",
+  },
+  nav: {
+    home: "الرئيسية",
+    about: "نبذة",
+    projects: "المشاريع",
+    skills: "المهارات",
+    experience: "الخبرات",
+    contact: "تواصل",
+  },
+  langLabel: "EN",
+  hero: {
+    hello: "مرحباً، أنا",
+    first: "راما",
+    last: "الصعب",
+    role: "مطوّرة إبداعية",
+    tagline: "أبني تجارب تفاعلية يلتقي فيها الإبداع بالتقنية والخيال.",
+    viewWork: "شاهد أعمالي",
+    aboutMe: "نبذة عني",
+    scroll: "مرّر للأسفل",
+    statProjects: "مشاريع",
+    statAward: "جائزة",
+    statAwards: "جوائز",
+    statCuriosity: "فضول",
+    note: "same curious girl,\nbrighter builds",
+  },
+  cat: {
+    messages: ["مياو.", "أهلاً ♡", "واصل الاستكشاف", "خرررر…", "وجدتني!", "مشروع آخر؟"],
+  },
+  about: {
+    title: "نبذة عني",
+    lead: "برمجيات، وعتاد، وقليل من الخيال.",
+    basedIn: "الموقع",
+    education: "التعليم",
+    graduation: "التخرج المتوقع",
+    interests: "الاهتمامات",
+    background: "الخلفية التقنية",
+    downloadCv: "تحميل السيرة الذاتية",
+    note: "a curious mind\n& a black cat",
+  },
+  projects: {
+    title: "مشاريع مختارة",
+    allTitle: "جميع المشاريع",
+    intro: "عوالم افتراضية متصلة بنماذج أولية حقيقية، وألعاب، ونماذج ثلاثية الأبعاد، وأجهزة مبنية من الصفر.",
+    viewAll: "عرض جميع المشاريع",
+    viewProject: "عرض المشروع",
+    empty: "لا توجد مشاريع في هذه الفئة بعد.",
+    filters: {
+      all: "جميع المشاريع",
+      "vr-mr": "الواقع الافتراضي / المختلط",
+      "game-dev": "تطوير الألعاب",
+      hardware: "العتاد",
+      "3d-modeling": "النمذجة ثلاثية الأبعاد",
+      interactive: "تجارب تفاعلية",
+    },
+    count: { zero: "لا توجد مشاريع", one: "مشروع واحد", two: "مشروعان", few: "{n} مشاريع", many: "{n} مشروعاً", other: "{n} مشروع" },
+  },
+  project: {
+    backToProjects: "جميع المشاريع",
+    category: "الفئة",
+    year: "السنة",
+    role: "الدور",
+    engine: "أدوات البناء",
+    technologies: "التقنيات",
+    gallery: "معرض الصور",
+    videos: "مقاطع الفيديو",
+    achievements: "الإنجازات",
+    links: "روابط",
+    github: "عرض على GitHub",
+    demo: "تجربة مباشرة",
+    model: "النموذج ثلاثي الأبعاد",
+    modelHint: "اسحب للتدوير · مرّر أو اقرص للتكبير",
+    related: "مشاريع ذات صلة",
+    previous: "السابق",
+    next: "التالي",
+    inProgress: "يجري توسيع دراسة الحالة هذه — المزيد من الصور ومقاطع الفيديو والتفاصيل قريباً.",
+    watchOnYouTube: "شاهد على YouTube",
+    videoUnsupported: "متصفحك لا يدعم تشغيل هذا الفيديو.",
+    download: "تحميل",
+  },
+  skills: {
+    title: "المهارات",
+    intro: "الأدوات والمجالات التي أعمل بها. اختر مهارة لترى أين تظهر في مشاريعي.",
+    usedIn: "تظهر في",
+    noProjects: "لم تظهر في مشروع منشور بعد.",
+    groups: {
+      languages: "لغات البرمجة",
+      immersive: "التقنيات الغامرة وتطوير الألعاب",
+      modeling: "النمذجة ثلاثية الأبعاد",
+      hardware: "الأنظمة المدمجة والعتاد",
+      tools: "أدوات التطوير",
+    },
+  },
+  experience: {
+    title: "الخبرات",
+    subtitle: "التعليم والإنجازات",
+    types: {
+      education: "التعليم",
+      award: "جائزة",
+      competition: "مسابقة",
+      internship: "تدريب",
+      coop: "تدريب تعاوني",
+      role: "وظيفة",
+      hackathon: "هاكاثون",
+      bootcamp: "معسكر تدريبي",
+      certification: "شهادة",
+    },
+    relatedProject: "المشروع المرتبط",
+  },
+  contact: {
+    title: "تواصل",
+    heading: "لنصنع شيئاً مذهلاً معاً.",
+    text: "لديك فكرة أو مشروع أو فرصة؟ يسعدني أن أسمع عنها.",
+    email: "البريد الإلكتروني",
+    linkedin: "LinkedIn",
+    github: "GitHub",
+    cv: "تحميل السيرة الذاتية",
+    devHint: "ملاحظة تطوير (مخفية في النسخة المنشورة): لم تُضَف روابط التواصل بعد. أضيفيها في src/content/site.ts.",
+  },
+  footer: {
+    rights: "جميع الحقوق محفوظة.",
+    note: "Same curious girl, building brighter things",
+    built: "صُمّم وبُني بعناية في الرياض",
+  },
+  notFound: {
+    title: "هذه الصفحة تاهت.",
+    text: "حتى القطة لم تجدها.",
+    home: "العودة للرئيسية",
+  },
+};
+
+export const dictionaries = { en, ar } as const;
+
+export function getDictionary(locale: "en" | "ar"): Dictionary {
+  return dictionaries[locale];
+}
