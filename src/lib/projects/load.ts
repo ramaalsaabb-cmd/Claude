@@ -93,7 +93,8 @@ function resolveProject(p: Project): ResolvedProject {
     .filter((src): src is string => !!src && publicFileExists(src))
     .map<ResolvedImage>((src) => ({
       src,
-      alt: p.title,
+      alt: p.coverAlt ?? p.title,
+      altAr: p.coverAltAr,
       width: mediaManifest[src]?.width,
       height: mediaManifest[src]?.height,
     }));

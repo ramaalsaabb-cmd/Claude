@@ -15,7 +15,7 @@ export type ProjectCardData = {
   technologies: string[];
   featured: boolean;
   achievement?: { title: string; titleAr?: string; event?: string; eventAr?: string };
-  cover: { src: string; alt: string } | null;
+  cover: { src: string; alt: string; altAr?: string } | null;
   theme?: CoverTheme;
 };
 
@@ -32,7 +32,7 @@ export function toCardData(p: ResolvedProject): ProjectCardData {
     technologies: p.technologies,
     featured: p.featured,
     achievement: p.achievements[0],
-    cover: p.cover ? { src: p.cover.src, alt: p.cover.alt } : null,
+    cover: p.cover ? { src: p.cover.src, alt: p.cover.alt, altAr: p.cover.altAr } : null,
     theme: p.theme,
   };
 }

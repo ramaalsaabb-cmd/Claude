@@ -117,7 +117,7 @@ export default function ProjectDetail({ project: p, locale, dict, position, tota
   const heroImage = p.heroImage
     ? { src: p.heroImage, alt: title }
     : p.cover
-      ? { src: p.cover.src, alt: p.cover.alt }
+      ? { src: p.cover.src, alt: pick(locale, p.cover.alt, p.cover.altAr) }
       : null;
   // Show the whole image (with a soft blurred backdrop) unless it is already wide
   const coverRatio = p.cover?.width && p.cover?.height ? p.cover.width / p.cover.height : 16 / 9;

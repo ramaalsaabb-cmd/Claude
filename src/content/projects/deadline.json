@@ -5,14 +5,21 @@
   "titleAr": "Deadline",
   "category": "Unreal Engine / Game Development",
   "categoryAr": "Unreal Engine / تطوير الألعاب",
-  "categories": ["game-dev", "interactive"],
+  "categories": [
+    "game-dev",
+    "interactive"
+  ],
   "description": "My latest game project, built in Unreal Engine — with a hand-drawn official poster featuring a very familiar black cat.",
   "descriptionAr": "أحدث مشاريعي في تطوير الألعاب، مبني باستخدام Unreal Engine — مع ملصق رسمي مرسوم يدوياً تظهر فيه قطة سوداء مألوفة جداً.",
   "overview": "Deadline is my latest game project, developed in Unreal Engine.",
   "overviewAr": "Deadline هو أحدث مشاريعي في تطوير الألعاب، طُوّر باستخدام Unreal Engine.",
-  "engine": ["Unreal Engine"],
-  "technologies": ["Unreal Engine"],
-  "coverImage": "/projects/deadline/posters/deadline-poster.jpg",
+  "engine": [
+    "Unreal Engine"
+  ],
+  "technologies": [
+    "Unreal Engine"
+  ],
+  "coverImage": "/projects/deadline/cover/cover.jpg",
   "sections": [
     {
       "id": "overview",
@@ -21,7 +28,13 @@
       "body": "Deadline is my latest game project, developed in Unreal Engine.",
       "bodyAr": "Deadline هو أحدث مشاريعي في تطوير الألعاب، طُوّر باستخدام Unreal Engine."
     },
-    { "id": "concept", "title": "Concept", "titleAr": "الفكرة", "body": "", "bodyAr": "" },
+    {
+      "id": "concept",
+      "title": "Concept",
+      "titleAr": "الفكرة",
+      "body": "",
+      "bodyAr": ""
+    },
     {
       "id": "poster",
       "title": "Official Poster",
@@ -54,12 +67,48 @@
         }
       ]
     },
-    { "id": "unreal", "title": "Unreal Engine Development", "titleAr": "التطوير باستخدام Unreal Engine", "body": "", "bodyAr": "" },
-    { "id": "screenshots", "title": "Screenshots", "titleAr": "لقطات من اللعبة", "images": [], "layout": "wide" },
-    { "id": "role", "title": "My Role", "titleAr": "دوري", "body": "", "bodyAr": "" },
-    { "id": "challenges", "title": "Technical Challenges", "titleAr": "التحديات التقنية", "body": "", "bodyAr": "" },
-    { "id": "process", "title": "Development Process", "titleAr": "مراحل التطوير", "body": "", "bodyAr": "" },
-    { "id": "outcomes", "title": "Outcomes", "titleAr": "النتائج", "body": "", "bodyAr": "" }
+    {
+      "id": "unreal",
+      "title": "Unreal Engine Development",
+      "titleAr": "التطوير باستخدام Unreal Engine",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "screenshots",
+      "title": "Screenshots",
+      "titleAr": "لقطات من اللعبة",
+      "images": [],
+      "layout": "wide"
+    },
+    {
+      "id": "role",
+      "title": "My Role",
+      "titleAr": "دوري",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "challenges",
+      "title": "Technical Challenges",
+      "titleAr": "التحديات التقنية",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "process",
+      "title": "Development Process",
+      "titleAr": "مراحل التطوير",
+      "body": "",
+      "bodyAr": ""
+    },
+    {
+      "id": "outcomes",
+      "title": "Outcomes",
+      "titleAr": "النتائج",
+      "body": "",
+      "bodyAr": ""
+    }
   ],
   "gallery": [],
   "videos": [],
@@ -68,10 +117,17 @@
   "published": true,
   "displayOrder": 2,
   "inProgress": true,
-  "theme": { "accent": "#A32020", "coverBackground": "#EFE6DA", "coverInk": "#1E1B1B", "motif": "poster" },
+  "theme": {
+    "accent": "#A32020",
+    "coverBackground": "#EFE6DA",
+    "coverInk": "#1E1B1B",
+    "motif": "poster"
+  },
   "editorNotes": [
     "Poster: place DeadlinePoster(1).pdf (or DeadlinePoster.pdf) in media-source/incoming/ and run `npm run media` — it renders a web copy and keeps the PDF.",
     "The YouTube video could not be inspected while building, so no gameplay details were written. Add concept, mechanics, role and team info once confirmed.",
     "Do not describe the game as solo work unless confirmed."
-  ]
+  ],
+  "coverAlt": "Deadline cover: a campus building with palm trees and a black cat in the foreground.",
+  "coverAltAr": "غلاف Deadline: مبنى حرم جامعي مع أشجار نخيل وقطة سوداء في المقدمة."
 }

@@ -128,5 +128,8 @@
     "No media supplied yet.",
     "YouTube video AerBoTHjxKo supplied by Rama; it could not be watched from the build environment, so no caption was written."
   ],
-  "year": "2026"
+  "year": "2026",
+  "coverImage": "/projects/vr-mechatronics-lab/cover/cover.jpg",
+  "coverAlt": "VR Mechatronics Lab cover: LED lesson panels on a screen beside an Arduino board.",
+  "coverAltAr": "غلاف مختبر الميكاترونكس: لوحات درس عن مصابيح LED على شاشة بجانب لوحة Arduino."
 }

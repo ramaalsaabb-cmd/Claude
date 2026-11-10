@@ -100,6 +100,9 @@ export const projectSchema = z.object({
   engine: z.array(text).optional(),
   technologies: z.array(text).default([]),
   coverImage: publicPath.optional(),
+  /** Alt text for coverImage (falls back to the title). */
+  coverAlt: text.optional(),
+  coverAltAr: text.optional(),
   heroImage: publicPath.optional(),
   heroVideo: videoSchema.optional(),
   gallery: z.array(imageSchema).default([]),

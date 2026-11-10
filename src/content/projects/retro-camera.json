@@ -173,6 +173,7 @@
     "IMG_3380 is only 561×481 px — a higher-resolution render would look sharper as the cover."
   ],
   "year": "2026",
-  "coverImage": "/projects/retro-camera/photos/IMG_3380.jpg",
-  "heroImage": "/projects/retro-camera/photos/IMG_3380.jpg"
+  "coverImage": "/projects/retro-camera/cover/cover.jpg",
+  "coverAlt": "Retro Camera cover: the blue, white, purple and pink camera design.",
+  "coverAltAr": "غلاف الكاميرا الكلاسيكية: تصميم الكاميرا بالألوان الأزرق والأبيض والبنفسجي والوردي."
 }
