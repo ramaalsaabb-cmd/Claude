@@ -20,7 +20,6 @@
     "3D Modeling",
     "Environment Modeling"
   ],
-  "coverImage": "/projects/maya-3d-modeling/cover/cover.jpg",
   "sections": [
     {
       "id": "overview",
@@ -124,6 +123,5 @@
     "Video Project 1.mp4 inspected: a Maya viewport recording of a house model (exterior + interior). The video poster is used as the cover until the screenshot image(20261109-104633).png is uploaded.",
     "3D viewer appears only when public/projects/maya-3d-modeling/models/building.glb exists."
   ],
-  "coverAlt": "Maya 3D Modeling cover: a stylized wooden house model with dark red roofs.",
-  "coverAltAr": "غلاف النمذجة ثلاثية الأبعاد: نموذج منزل خشبي بأسقف حمراء داكنة."
+  "graphicCover": true
 }

@@ -103,6 +103,8 @@ export const projectSchema = z.object({
   /** Alt text for coverImage (falls back to the title). */
   coverAlt: text.optional(),
   coverAltAr: text.optional(),
+  /** true = always use the designed graphic cover (theme motif), even when photos exist. */
+  graphicCover: z.boolean().default(false),
   heroImage: publicPath.optional(),
   heroVideo: videoSchema.optional(),
   gallery: z.array(imageSchema).default([]),

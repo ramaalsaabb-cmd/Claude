@@ -181,7 +181,5 @@
     "Challenges section still empty."
   ],
   "year": "2026",
-  "coverImage": "/projects/katheeb/cover/cover.jpg",
-  "coverAlt": "KATHEEB cover: a view across desert dunes at sunset from the front of a sled.",
-  "coverAltAr": "غلاف كثيب: منظر لكثبان الصحراء عند الغروب من مقدمة المزلجة."
+  "graphicCover": true
 }

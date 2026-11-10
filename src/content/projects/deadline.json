@@ -19,7 +19,6 @@
   "technologies": [
     "Unreal Engine"
   ],
-  "coverImage": "/projects/deadline/cover/cover.jpg",
   "sections": [
     {
       "id": "overview",
@@ -128,6 +127,5 @@
     "The YouTube video could not be inspected while building, so no gameplay details were written. Add concept, mechanics, role and team info once confirmed.",
     "Do not describe the game as solo work unless confirmed."
   ],
-  "coverAlt": "Deadline cover: “Campus Game (Unreal Engine)” over a campus building with palm trees and a black cat in the foreground.",
-  "coverAltAr": "غلاف Deadline: «لعبة الحرم الجامعي (Unreal Engine)» فوق مبنى جامعي مع أشجار نخيل وقطة سوداء في المقدمة."
+  "graphicCover": true
 }

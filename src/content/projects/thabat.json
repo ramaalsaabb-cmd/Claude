@@ -34,7 +34,6 @@
     "Haptic Interaction",
     "Hardware/Software Integration"
   ],
-  "coverImage": "/projects/thabat/cover/cover.jpg",
   "sections": [
     {
       "id": "overview",
@@ -203,6 +202,5 @@
     "Still missing: photos of the physical glove / hardware for the 'hardware' section."
   ],
   "year": "2026",
-  "coverAlt": "THABAT cover: a VR headset beside a laptop showing the THABAT dashboard, with a hand wearing the haptic glove.",
-  "coverAltAr": "غلاف ثبات: نظارة واقع افتراضي بجانب حاسوب يعرض لوحة ثبات، ويد ترتدي القفاز اللمسي."
+  "graphicCover": true
 }

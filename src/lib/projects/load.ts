@@ -102,8 +102,9 @@ function resolveProject(p: Project): ResolvedProject {
     .filter((v) => v.poster)
     .map<ResolvedImage>((v) => ({ src: v.poster!, alt: v.title }));
 
-  const cover =
-    explicit[0] ?? gallery[0] ?? sections.flatMap((s) => s.images)[0] ?? posterFallback[0] ?? null;
+  const cover = p.graphicCover
+    ? null
+    : explicit[0] ?? gallery[0] ?? sections.flatMap((s) => s.images)[0] ?? posterFallback[0] ?? null;
 
   return { ...p, gallery, videos, sections, heroVideo, model3D, cover };
 }
