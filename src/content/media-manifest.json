@@ -1,11 +1,11 @@
 {
   "/projects/deadline/cover/cover.jpg": {
-    "width": 1104,
-    "height": 869
+    "width": 1100,
+    "height": 866
   },
   "/projects/katheeb/cover/cover.jpg": {
-    "width": 1052,
-    "height": 792
+    "width": 1100,
+    "height": 936
   },
   "/projects/katheeb/screenshots/katheeb-desert-ride.jpg": {
     "width": 576,
@@ -29,8 +29,8 @@
     "duration": 70.1
   },
   "/projects/maya-3d-modeling/cover/cover.jpg": {
-    "width": 1056,
-    "height": 748
+    "width": 1100,
+    "height": 902
   },
   "/projects/maya-3d-modeling/videos/maya-presentation-poster.jpg": {
     "width": 1920,
@@ -42,8 +42,8 @@
     "duration": 23.1
   },
   "/projects/retro-camera/cover/cover.jpg": {
-    "width": 1088,
-    "height": 784
+    "width": 1100,
+    "height": 895
   },
   "/projects/retro-camera/photos/1d3fc1e5-4b2b-42fc-8723-567725e750a9.jpg": {
     "width": 1200,
@@ -71,8 +71,8 @@
     "duration": 8.4
   },
   "/projects/thabat/cover/cover.jpg": {
-    "width": 1096,
-    "height": 792
+    "width": 1100,
+    "height": 907
   },
   "/projects/thabat/screenshots/thabat-start.jpg": {
     "width": 816,
@@ -96,7 +96,7 @@
     "duration": 31.1
   },
   "/projects/vr-mechatronics-lab/cover/cover.jpg": {
-    "width": 1092,
-    "height": 869
+    "width": 1100,
+    "height": 875
   }
 }
